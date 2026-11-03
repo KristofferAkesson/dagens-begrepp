@@ -1,39 +1,32 @@
-name: Validera innehåll
+name: Validera
 
+# Körs vid varje push och pull request. Skyddsregeln på main kräver att jobbet "validera" går igenom.
 on:
   push:
-    branches: [main]
   pull_request:
-    branches: [main]
 
 jobs:
   validera:
-    name: validera
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # hela historiken, för jämförelsen med föregående version
 
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - name: Hämta föregående version
-        run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            REF="origin/${{ github.base_ref }}"
-          else
-            REF="${{ github.event.before }}"
-          fi
-          if git cat-file -e "$REF:begrepp.json" 2>/dev/null; then
-            git show "$REF:begrepp.json" > /tmp/forra.json
-          fi
+      - name: Testa skripten
+        run: python -m unittest discover scripts
 
       - name: Validera begrepp.json
+        env:
+          # Pull request: jämför med main. Push: jämför med commiten före pushen.
+          FOREGAENDE: ${{ github.event_name == 'pull_request' && format('origin/{0}', github.base_ref) || github.event.before }}
         run: |
-          if [ -f /tmp/forra.json ]; then
-            python3 scripts/validera.py begrepp.json --jamfor /tmp/forra.json
+          if [ -n "$FOREGAENDE" ] && [ "$FOREGAENDE" != "0000000000000000000000000000000000000000" ]; then
+            python scripts/validera.py begrepp.json --foregaende "$FOREGAENDE"
           else
-            python3 scripts/validera.py begrepp.json
+            python scripts/validera.py begrepp.json
           fi
