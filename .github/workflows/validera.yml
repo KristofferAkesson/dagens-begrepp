@@ -1,0 +1,39 @@
+name: Validera innehåll
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validera:
+    name: validera
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Hämta föregående version
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            REF="origin/${{ github.base_ref }}"
+          else
+            REF="${{ github.event.before }}"
+          fi
+          if git cat-file -e "$REF:begrepp.json" 2>/dev/null; then
+            git show "$REF:begrepp.json" > /tmp/forra.json
+          fi
+
+      - name: Validera begrepp.json
+        run: |
+          if [ -f /tmp/forra.json ]; then
+            python3 scripts/validera.py begrepp.json --jamfor /tmp/forra.json
+          else
+            python3 scripts/validera.py begrepp.json
+          fi
