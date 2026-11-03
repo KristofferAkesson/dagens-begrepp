@@ -1,60 +1,115 @@
 # Dagens begrepp: innehåll
 
-Det här repot innehåller allt innehåll till appen Dagens begrepp. Apparna för Mac och iPhone hämtar filen `begrepp.json` härifrån, så en ändring som slås ihop till `main` når alla användare inom några minuter.
+Här finns allt innehåll till appen Dagens begrepp för Mac och iPhone. Filen `begrepp.json` är originalet. Apparna hämtar den härifrån, så en ändring som har gått igenom valideringen når alla användare inom några minuter, utan att apparna behöver uppdateras.
 
-## Innehåll i repot
+Appens kod ligger i ett eget repo.
 
-- `begrepp.json` är originalet för alla begrepp. Varje begrepp har ett datum då det är dagens begrepp.
-- `scripts/validera.py` kontrollerar att filen följer reglerna nedan.
-- `scripts/exportera_slack.py` skapar kalkylarket som Slack-flödet hämtar begreppen från.
-- `.github/workflows/validera.yml` kör valideringen automatiskt vid varje ändring.
+## Filer
 
-## Regler för innehållet
+| Fil | Innehåll |
+| --- | --- |
+| `begrepp.json` | Alla begrepp, ett per dag, i datumordning. |
+| `scripts/validera.py` | Kontrollerar filen. Körs automatiskt vid varje ändring. |
+| `scripts/exportera_slack.py` | Skapar kalkylarket för Slack Workflow Builder. |
+| `scripts/test_skript.py` | Tester för de två skripten. |
+| `.github/workflows/validera.yml` | Kör testerna och valideringen på GitHub. |
 
-Valideringen stoppar en ändring om någon av reglerna bryts:
+## Så fungerar kalendariet
 
-- Filen följer schema 4 och alla obligatoriska fält finns.
-- Varje begrepp har ett eget id och ett eget datum.
-- Kalendariet har ett begrepp per dag, utan luckor.
-- `exempel_typ` är `verkligt` eller `illustrativt`.
-- Ett begrepp som redan har visats tas aldrig bort och byter aldrig datum. Texten får rättas.
-- `innehallsversion` uppdateras varje gång innehållet ändras.
-- Inga tankstreck delar upp meningar, enligt KAN:s skrivregler.
+Varje begrepp har ett `datum`. Begreppet med dagens datum är dagens begrepp, för alla användare samtidigt. Kalendariet startade 2026-11-03 och har ett begrepp för varje dag, även helger.
 
-Begrepp med framtida datum får bytas ut fritt, eftersom ingen har sett dem. Om ett sådant begrepp tas bort behöver datumen för de följande begreppen flyttas så att det inte blir en lucka.
+Ett begrepp ser ut så här:
+
+```json
+{
+  "id": "2026-q4-001",
+  "datum": "2026-11-03",
+  "omrade": "Varumärke och tillväxt",
+  "rubrik": "Mental availability",
+  "brodtext": "…",
+  "exempel": "…",
+  "exempel_typ": "illustrativt",
+  "karnan": "…",
+  "termer": ["…"],
+  "las_vidare": ["…"],
+  "period": "Månad 1",
+  "granskad": "2026-10-17"
+}
+```
+
+Överst i filen finns `schema_version` (alltid 4) och `innehallsversion`, ett datum som ändras vid varje publicering. Publiceras filen flera gånger samma dag läggs ett löpnummer till: `2026-11-03.2`, `2026-11-03.3` och så vidare upp till `.9`. Apparna använder versionen för att avgöra vilken fil som är nyast.
+
+## Regler
+
+Valideringen stoppar en ändring om något av följande gäller:
+
+1. Filen är inte giltig JSON eller följer inte schema 4.
+2. Två begrepp har samma id eller samma datum.
+3. Ett fält saknas eller är tomt. `exempel_typ` måste vara `verkligt` eller `illustrativt`.
+4. Datumen har luckor eller ligger i fel ordning.
+5. Ett begrepp vars datum har kommit har tagits bort eller fått nytt id eller nytt datum. Det gäller även dagens begrepp. Rättelser av texten är tillåtna.
+6. Innehållet har ändrats men `innehallsversion` är densamma som förut.
+7. En text innehåller tankstreck som delar upp meningar (KAN:s skrivregler). Tankstreck i intervall, som 0–6, är tillåtna.
+
+Begrepp med datum i framtiden får bytas ut eller tas bort fritt, eftersom ingen har sett dem än. Tänk då på att datumen fortfarande ska följa på varandra utan luckor.
 
 ## Lägga till nya begrepp
 
 1. Lägg de nya begreppen sist i `begrepp.json`, med datum som fortsätter dagen efter det sista befintliga.
-2. Uppdatera `innehallsversion` till dagens datum.
-3. Spara ändringen i en ny gren och öppna en pull request. I GitHubs webbgränssnitt väljer du "Create a new branch and start a pull request".
-4. Vänta tills kontrollen `validera` är grön. Är den röd står felen i loggen under fliken Actions.
-5. Slå ihop pull requesten till `main`.
+2. Ändra `innehallsversion` till dagens datum, eller lägg till ett löpnummer om filen redan har publicerats i dag.
+3. Spara ändringen i repot, via GitHubs webbgränssnitt, GitHub Desktop eller Claude Code. Gör det gärna som en pull request.
+4. Valideringen körs automatiskt. Är den grön kan ändringen gå in i `main`, och då når innehållet apparna inom några minuter.
+5. Kör vid behov exporten till Slack-arket (se nedan) och importera det nya arket till Google Sheets.
 
-## Köra valideringen på egen dator
+Rätta en text på samma sätt: ändra texten, uppdatera `innehallsversion` och spara.
 
-```
+## Köra skripten själv
+
+Skripten behöver bara Python 3.9 eller senare, inga andra paket.
+
+Validera filen:
+
+```sh
 python3 scripts/validera.py begrepp.json
 ```
 
-För att också kontrollera att inga visade begrepp har ändrats, jämför med föregående version:
+Validera och jämför med versionen på `main`, som GitHub gör:
 
-```
-git show main:begrepp.json > /tmp/forra.json
-python3 scripts/validera.py begrepp.json --jamfor /tmp/forra.json
-```
-
-## Uppdatera kalkylarket för Slack
-
-Exporten behövs bara när begrepp har lagts till eller ändrats. Ladda ner det nuvarande arket från Google Sheets som xlsx och kör:
-
-```
-pip install openpyxl
-python3 scripts/exportera_slack.py begrepp.json --befintlig nuvarande-ark.xlsx
+```sh
+git fetch
+python3 scripts/validera.py begrepp.json --foregaende origin/main
 ```
 
-Det nya arket behåller värdena i kolumnen Postad, så kön i Slack fortsätter där den var. Importera filen till Google Sheets och ersätt fliken Begrepp.
+Kör testerna för skripten:
+
+```sh
+python3 -m unittest discover scripts
+```
+
+## Exportera till Slack-arket
+
+Slack Workflow Builder postar begreppen från ett kalkylark i Google Sheets. Kolumnen Postad håller reda på vilka som redan har postats. Exporten behåller Postad för begrepp som redan finns i arket, så att kön inte börjar om.
+
+1. Ladda ner det nuvarande arket från Google Sheets som xlsx.
+2. Kör:
+
+   ```sh
+   python3 scripts/exportera_slack.py --befintligt nedladdat.xlsx --ut dagens-begrepp-slack.xlsx
+   ```
+
+3. Importera `dagens-begrepp-slack.xlsx` i Google Sheets och ersätt det gamla arket. Ändra inga kolumnrubriker.
+
+Utan `--befintligt` får alla begrepp Postad = nej.
+
+## Skyddsregel på main
+
+Ändringar i `main` ska kräva att valideringen har gått igenom. Det ställs in en gång i GitHub:
+
+1. Settings › Branches › Add branch ruleset (eller Add rule).
+2. Gäller grenen `main`.
+3. Slå på Require status checks to pass och välj kontrollen **validera**.
+4. Slå gärna på Require a pull request before merging.
 
 ## Ansvar
 
-Innehållet faktagranskas varje halvår, med extra fokus på regelverk och AI eftersom de områdena förändras snabbast. Fältet `granskad` visar när ett begrepp senast kontrollerades.
+Den som ansvarar för innehållet ser till att fakta stämmer. Begrepp om regelverk och AI faktagranskas varje halvår, och datumet för senaste granskningen står i `granskad`.
