@@ -13,6 +13,7 @@ import unittest
 sys.path.insert(0, os.path.dirname(__file__))
 
 import exportera_slack  # noqa: E402
+import posta_slack  # noqa: E402
 from validera import validera  # noqa: E402
 
 IDAG = dt.date(2026, 11, 5)
@@ -209,6 +210,59 @@ class ExporteraSlackTests(unittest.TestCase):
         with open(sokvag, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False)
         return sokvag
+
+
+class PostaSlackTests(unittest.TestCase):
+    def test_dagens_begrepp_efter_datum(self):
+        data = fil(5)
+        self.assertEqual(posta_slack.dagens_begrepp(data, dt.date(2026, 11, 5))["id"], "2026-q4-003")
+
+    def test_inget_begrepp_en_dag_utan_datum(self):
+        self.assertIsNone(posta_slack.dagens_begrepp(fil(5), dt.date(2026, 11, 20)))
+        self.assertIsNone(posta_slack.dagens_begrepp(fil(5), dt.date(2026, 11, 2)))
+
+    def test_meddelandet_har_kortens_delar(self):
+        b = begrepp(1, "2026-11-03")
+        b["brodtext"] = "Pris & värde <i> fokus."
+        data = posta_slack.meddelande(b, dt.date(2026, 11, 3))
+        text = json_text(data)
+        self.assertEqual(data["text"], "Dagens begrepp: Rubrik 1")
+        self.assertEqual(data["blocks"][0]["text"]["text"], "Rubrik 1")
+        self.assertIn("Strategi och affär · Tisdag 3 november", text)
+        self.assertIn("Pris &amp; värde &lt;i&gt; fokus.", text)
+        self.assertIn("*Illustrativt exempel*", text)
+        self.assertIn("*Kärnan:* Kärnan.", text)
+        self.assertIn("*Nyckelord:* term", text)
+        self.assertIn("*Läs vidare:* sökord", text)
+
+    def test_prova_postar_inte(self):
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as mapp:
+            sokvag = ExporteraSlackTests._skriv(mapp, fil(3))
+            utdata = io.StringIO()
+            with contextlib.redirect_stdout(utdata):
+                kod = posta_slack.main(["--fil", sokvag, "--datum", "2026-11-04", "--prova"])
+            self.assertEqual(kod, 0)
+            self.assertIn("Rubrik 2", utdata.getvalue())
+
+    def test_utan_webhook_ar_det_ett_fel(self):
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as mapp:
+            sokvag = ExporteraSlackTests._skriv(mapp, fil(3))
+            gammal = os.environ.pop("SLACK_WEBHOOK_URL", None)
+            try:
+                with contextlib.redirect_stdout(io.StringIO()):
+                    self.assertEqual(posta_slack.main(["--fil", sokvag, "--datum", "2026-11-04"]), 1)
+            finally:
+                if gammal is not None:
+                    os.environ["SLACK_WEBHOOK_URL"] = gammal
+
+
+def json_text(data: dict) -> str:
+    import json
+    return json.dumps(data, ensure_ascii=False)
 
 
 if __name__ == "__main__":

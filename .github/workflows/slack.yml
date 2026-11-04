@@ -1,0 +1,38 @@
+name: Posta i Slack
+
+# Postar dagens begrepp i Slack-kanalen varje morgon. Tiden anges i UTC: 06:00 UTC är 07:00 på
+# vintern och 08:00 på sommaren i Sverige. GitHub kan starta schemalagda jobb några minuter sent.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  # Manuell körning från fliken Actions, t.ex. för att prova.
+  workflow_dispatch:
+    inputs:
+      datum:
+        description: "Annan dag än i dag (ÅÅÅÅ-MM-DD), tomt för i dag"
+        required: false
+      prova:
+        description: "Visa meddelandet i loggen utan att posta"
+        type: boolean
+        default: true
+
+jobs:
+  posta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Posta dagens begrepp
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          DATUM: ${{ inputs.datum }}
+          PROVA: ${{ inputs.prova }}
+        run: |
+          ARGS=""
+          if [ -n "$DATUM" ]; then ARGS="$ARGS --datum $DATUM"; fi
+          if [ "$PROVA" = "true" ]; then ARGS="$ARGS --prova"; fi
+          python scripts/posta_slack.py $ARGS
