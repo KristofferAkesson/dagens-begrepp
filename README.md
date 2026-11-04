@@ -10,9 +10,11 @@ Appens kod ligger i ett eget repo.
 | --- | --- |
 | `begrepp.json` | Alla begrepp, ett per dag, i datumordning. |
 | `scripts/validera.py` | Kontrollerar filen. Körs automatiskt vid varje ändring. |
-| `scripts/exportera_slack.py` | Skapar kalkylarket för Slack Workflow Builder. |
+| `scripts/posta_slack.py` | Postar dagens begrepp i Slack-kanalen. Körs varje morgon av GitHub. |
+| `scripts/exportera_slack.py` | Skapar kalkylarket för det äldre Slack-flödet i Workflow Builder. |
 | `scripts/test_skript.py` | Tester för de två skripten. |
 | `.github/workflows/validera.yml` | Kör testerna och valideringen på GitHub. |
+| `.github/workflows/slack.yml` | Postar dagens begrepp i Slack varje morgon. |
 
 ## Så fungerar kalendariet
 
@@ -59,7 +61,7 @@ Begrepp med datum i framtiden får bytas ut eller tas bort fritt, eftersom ingen
 2. Ändra `innehallsversion` till dagens datum, eller lägg till ett löpnummer om filen redan har publicerats i dag.
 3. Spara ändringen i repot, via GitHubs webbgränssnitt, GitHub Desktop eller Claude Code. Gör det gärna som en pull request.
 4. Valideringen körs automatiskt. Är den grön kan ändringen gå in i `main`, och då når innehållet apparna inom några minuter.
-5. Kör vid behov exporten till Slack-arket (se nedan) och importera det nya arket till Google Sheets.
+5. Slack följer med automatiskt: kanalen får varje dags begrepp från samma fil.
 
 Rätta en text på samma sätt: ändra texten, uppdatera `innehallsversion` och spara.
 
@@ -86,7 +88,32 @@ Kör testerna för skripten:
 python3 -m unittest discover scripts
 ```
 
-## Exportera till Slack-arket
+## Slack
+
+Varje morgon klockan 07.00 (08.00 på sommaren) postar GitHub dagens begrepp i Slack-kanalen. Det är begreppet med dagens datum i `begrepp.json`, samma som i apparna, så Slack och apparna visar alltid samma begrepp samma dag. En dag utan begrepp postas ingenting.
+
+Meddelandet har rubrik, område och datum, förklaringen, exemplet, Kärnan, nyckelord och läs vidare.
+
+### Inställning, en gång
+
+1. Skapa en inkommande webhook till kanalen i Slack (en Slack-app med Incoming Webhooks). Det kräver behörighet att lägga till appar i arbetsytan.
+2. Lägg webbadressen som hemlighet i repot: Settings › Secrets and variables › Actions › New repository secret, med namnet `SLACK_WEBHOOK_URL`.
+3. Stäng av det gamla flödet i Workflow Builder, så att begreppet inte postas två gånger.
+
+### Prova
+
+Under fliken Actions, välj **Posta i Slack** och **Run workflow**. Med rutan "Visa meddelandet i loggen utan att posta" ikryssad syns meddelandet bara i loggen. Det går också att välja en annan dag.
+
+På egen dator:
+
+```sh
+python3 scripts/posta_slack.py --prova
+python3 scripts/posta_slack.py --datum 2026-11-10 --prova
+```
+
+## Exportera till Slack-arket (äldre flöde)
+
+Behövs bara om kanalen fortfarande använder flödet i Workflow Builder i stället för postningen ovan.
 
 Slack Workflow Builder postar begreppen från ett kalkylark i Google Sheets. Kolumnen Postad håller reda på vilka som redan har postats. Exporten behåller Postad för begrepp som redan finns i arket, så att kön inte börjar om.
 
