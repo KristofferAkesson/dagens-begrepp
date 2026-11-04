@@ -4,7 +4,7 @@ name: Posta i Slack
 # vintern och 08:00 på sommaren i Sverige. GitHub kan starta schemalagda jobb några minuter sent.
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "1 0 * * *"
   # Manuell körning från fliken Actions, t.ex. för att prova.
   workflow_dispatch:
     inputs:
