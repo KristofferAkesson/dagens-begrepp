@@ -10,11 +10,11 @@ Appens kod ligger i ett eget repo.
 | --- | --- |
 | `begrepp.json` | Alla begrepp, ett per dag, i datumordning. |
 | `scripts/validera.py` | Kontrollerar filen. Körs automatiskt vid varje ändring. |
-| `scripts/posta_slack.py` | Postar dagens begrepp i Slack-kanalen. Körs varje morgon av GitHub. |
+| `scripts/posta_slack.py` | Postar dagens begrepp i Slack-kanalen. Körs klockan 09.30 varje dag av GitHub. |
 | `scripts/exportera_slack.py` | Skapar kalkylarket för det äldre Slack-flödet i Workflow Builder. |
 | `scripts/test_skript.py` | Tester för de två skripten. |
 | `.github/workflows/validera.yml` | Kör testerna och valideringen på GitHub. |
-| `.github/workflows/slack.yml` | Postar dagens begrepp i Slack varje morgon. |
+| `.github/workflows/slack.yml` | Postar dagens begrepp i Slack klockan 09.30 och håller sig självt aktivt. |
 
 ## Så fungerar kalendariet
 
@@ -90,7 +90,19 @@ python3 -m unittest discover scripts
 
 ## Slack
 
-Varje morgon klockan 07.00 (08.00 på sommaren) postar GitHub dagens begrepp i Slack-kanalen. Det är begreppet med dagens datum i `begrepp.json`, samma som i apparna, så Slack och apparna visar alltid samma begrepp samma dag. En dag utan begrepp postas ingenting.
+Varje dag klockan 09.30 svensk tid, både sommar och vinter, postar GitHub dagens begrepp i Slack-kanalen. Det är begreppet med dagens datum i `begrepp.json`, samma som i apparna, så Slack och apparna visar alltid samma begrepp samma dag. En dag utan begrepp postas ingenting.
+
+### Klockslaget
+
+GitHub anger scheman i UTC och känner inte till sommartid. Arbetsflödet körs därför två gånger varje morgon, 07.30 UTC och 08.30 UTC. Skriptet får veta vilket schema som startade körningen och postar bara när det motsvarar 09.30 i Stockholm den dagen: 07.30 UTC på sommaren och 08.30 UTC på vintern. Den andra körningen avslutas utan att posta. På så sätt postas begreppet en gång per dag, även de dagar klockan ställs om.
+
+GitHub kan starta schemalagda körningar några minuter sent, ibland mer när det är mycket trafik. Skriptet räknar från schemat och inte från när körningen startade, så en sen körning postar ändå rätt begrepp, bara lite senare.
+
+### Arbetsflödet hålls aktivt
+
+GitHub stänger av schemalagda arbetsflöden i publika repon efter 60 dagar utan aktivitet i repot. För att postningen inte ska tystna när ingen har ändrat något på ett tag har arbetsflödet ett tredje schema, den första varje månad klockan 04.00 UTC. Då kör jobbet **hall-aktivt**, som återaktiverar arbetsflödet via GitHubs API. Det är samma metod som det spridda verktyget keepalive-workflow använder för att hålla schemalagda arbetsflöden igång. GitHubs dokumentation beskriver inte uttryckligen att en återaktivering nollställer räkningen, så håll ett öga på fliken Actions de första månaderna. Jobbet behöver ingen hemlighet; det använder repots egen token med behörighet att hantera arbetsflöden.
+
+Skulle arbetsflödet ändå ha stängts av syns det under fliken Actions. Välj **Posta i Slack** och **Enable workflow**.
 
 Meddelandet har rubrik, område och datum, förklaringen, exemplet, Kärnan, nyckelord och läs vidare.
 
@@ -102,14 +114,17 @@ Meddelandet har rubrik, område och datum, förklaringen, exemplet, Kärnan, nyc
 
 ### Prova
 
-Under fliken Actions, välj **Posta i Slack** och **Run workflow**. Med rutan "Visa meddelandet i loggen utan att posta" ikryssad syns meddelandet bara i loggen. Det går också att välja en annan dag.
+Under fliken Actions, välj **Posta i Slack** och **Run workflow**. En manuell körning postar direkt, oavsett klockslag. Med rutan "Visa meddelandet i loggen utan att posta" ikryssad syns meddelandet bara i loggen. Det går också att välja en annan dag.
 
 På egen dator:
 
 ```sh
 python3 scripts/posta_slack.py --prova
 python3 scripts/posta_slack.py --datum 2026-11-10 --prova
+python3 scripts/posta_slack.py --schema "30 8 * * *" --prova
 ```
+
+Den sista visar vad den schemalagda körningen 08.30 UTC skulle göra i dag.
 
 ## Exportera till Slack-arket (äldre flöde)
 
