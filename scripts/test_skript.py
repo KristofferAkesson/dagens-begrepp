@@ -260,6 +260,99 @@ class PostaSlackTests(unittest.TestCase):
                     os.environ["SLACK_WEBHOOK_URL"] = gammal
 
 
+class PostningstidTests(unittest.TestCase):
+    """Två scheman i UTC, "30 7 * * *" och "30 8 * * *", men postning bara 09.30 svensk tid."""
+    SOMMAR = "30 7 * * *"
+    VINTER = "30 8 * * *"
+
+    @staticmethod
+    def klockan(datum: str, timme: int = 6, minut: int = 0) -> dt.datetime:
+        return dt.datetime.fromisoformat(datum).replace(hour=timme, minute=minut, tzinfo=dt.timezone.utc)
+
+    def test_sommartid_postar_0730_utc(self):
+        nu = self.klockan("2027-07-01")
+        self.assertTrue(posta_slack.ska_posta(self.SOMMAR, nu))
+        self.assertFalse(posta_slack.ska_posta(self.VINTER, nu))
+        self.assertEqual(posta_slack.schemalagd_tid(self.SOMMAR, nu).strftime("%H.%M"), "09.30")
+
+    def test_vintertid_postar_0830_utc(self):
+        nu = self.klockan("2027-01-15")
+        self.assertFalse(posta_slack.ska_posta(self.SOMMAR, nu))
+        self.assertTrue(posta_slack.ska_posta(self.VINTER, nu))
+        self.assertEqual(posta_slack.schemalagd_tid(self.VINTER, nu).strftime("%H.%M"), "09.30")
+
+    def test_dagen_sommartiden_borjar(self):
+        # 28 mars 2027 ställs klockan fram klockan 02.00 svensk tid (01.00 UTC).
+        self.assertTrue(posta_slack.ska_posta(self.VINTER, self.klockan("2027-03-27")))
+        self.assertTrue(posta_slack.ska_posta(self.SOMMAR, self.klockan("2027-03-28")))
+        self.assertFalse(posta_slack.ska_posta(self.VINTER, self.klockan("2027-03-28")))
+
+    def test_dagen_sommartiden_slutar(self):
+        # 25 oktober 2026 ställs klockan tillbaka klockan 03.00 svensk tid (01.00 UTC).
+        self.assertTrue(posta_slack.ska_posta(self.SOMMAR, self.klockan("2026-10-24")))
+        self.assertTrue(posta_slack.ska_posta(self.VINTER, self.klockan("2026-10-25")))
+        self.assertFalse(posta_slack.ska_posta(self.SOMMAR, self.klockan("2026-10-25")))
+
+    def test_exakt_en_postning_varje_dag_i_tva_ar(self):
+        dag = dt.date(2026, 11, 5)
+        while dag < dt.date(2028, 11, 5):
+            nu = self.klockan(dag.isoformat())
+            antal = sum(posta_slack.ska_posta(schema, nu) for schema in (self.SOMMAR, self.VINTER))
+            self.assertEqual(antal, 1, f"{dag}: {antal} postningar")
+            dag += dt.timedelta(days=1)
+
+    def test_sen_korning_raknas_fran_schemat(self):
+        # GitHub startade sommarkörningen en dryg timme sent; den ska ändå posta, en gång.
+        sen = self.klockan("2027-07-01", timme=8, minut=40)
+        self.assertTrue(posta_slack.ska_posta(self.SOMMAR, sen))
+        self.assertFalse(posta_slack.ska_posta(self.VINTER, sen))
+
+    def test_andra_scheman_postar_inte(self):
+        nu = self.klockan("2027-07-01")
+        for schema in ["0 4 1 * *", "30 7 * * 1-5", "", "trasigt"]:
+            self.assertFalse(posta_slack.ska_posta(schema, nu), schema)
+
+    def test_fel_schema_postar_inget_och_ar_inget_fel(self):
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as mapp:
+            sokvag = ExporteraSlackTests._skriv(mapp, fil(5))
+            gammal = os.environ.pop("SLACK_WEBHOOK_URL", None)
+            utdata = io.StringIO()
+            try:
+                with contextlib.redirect_stdout(utdata):
+                    kod = posta_slack.main(["--fil", sokvag, "--schema", self.SOMMAR],
+                                           nu=self.klockan("2026-11-05", timme=7, minut=31))
+            finally:
+                if gammal is not None:
+                    os.environ["SLACK_WEBHOOK_URL"] = gammal
+            self.assertEqual(kod, 0)
+            self.assertIn("motsvarar 08.30 svensk tid i dag, inte 09.30", utdata.getvalue())
+
+    def test_ratt_schema_valjer_dagens_begrepp_i_svensk_tid(self):
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as mapp:
+            sokvag = ExporteraSlackTests._skriv(mapp, fil(5))
+            utdata = io.StringIO()
+            with contextlib.redirect_stdout(utdata):
+                kod = posta_slack.main(["--fil", sokvag, "--schema", self.VINTER, "--prova"],
+                                       nu=self.klockan("2026-11-05", timme=8, minut=32))
+            self.assertEqual(kod, 0)
+            self.assertIn("Rubrik 3", utdata.getvalue())  # 5 november är det tredje begreppet
+
+    def test_manuell_korning_utan_schema_postar_som_forut(self):
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as mapp:
+            sokvag = ExporteraSlackTests._skriv(mapp, fil(5))
+            utdata = io.StringIO()
+            with contextlib.redirect_stdout(utdata):
+                kod = posta_slack.main(["--fil", sokvag, "--prova"], nu=self.klockan("2026-11-04", timme=14))
+            self.assertEqual(kod, 0)
+            self.assertIn("Rubrik 2", utdata.getvalue())
+
+
 def json_text(data: dict) -> str:
     import json
     return json.dumps(data, ensure_ascii=False)

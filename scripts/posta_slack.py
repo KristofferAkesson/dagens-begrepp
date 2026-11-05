@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """Postar dagens begrepp i Slack-kanalen.
 
-Körs varje morgon av GitHub Actions (.github/workflows/slack.yml). Dagens begrepp är det med
-dagens datum i svensk tid, samma regel som i apparna, så Slack och apparna visar samma begrepp
-samma dag. Finns inget begrepp med dagens datum postas ingenting.
+Körs av GitHub Actions (.github/workflows/slack.yml) så att begreppet postas klockan 09.30 svensk
+tid, både sommar och vinter. Dagens begrepp är det med dagens datum i svensk tid, samma regel som i
+apparna, så Slack och apparna visar samma begrepp samma dag. Finns inget begrepp med dagens datum
+postas ingenting.
 
     python3 scripts/posta_slack.py --prova                 visa meddelandet utan att posta
     python3 scripts/posta_slack.py --datum 2026-11-10 --prova
     SLACK_WEBHOOK_URL=… python3 scripts/posta_slack.py     posta
+    python3 scripts/posta_slack.py --schema "30 7 * * *"   som den schemalagda körningen
+
+GitHub anger scheman i UTC och känner inte till sommartid. Arbetsflödet schemaläggs därför både
+07.30 och 08.30 UTC, och med --schema postar skriptet bara när den schemalagda tiden är 09.30 i
+Stockholm den dagen: 07.30 UTC på sommaren och 08.30 UTC på vintern. Så postas begreppet en gång
+per dag, även de dagar klockan ställs om.
 
 Webbadressen till kanalen läses från miljövariabeln SLACK_WEBHOOK_URL, som i GitHub ligger som
 hemlighet i repot. Skriptet använder bara Pythons standardbibliotek.
@@ -24,10 +31,33 @@ import urllib.request
 from zoneinfo import ZoneInfo
 
 TIDSZON = ZoneInfo("Europe/Stockholm")
+UTC = dt.timezone.utc
+#: Klockslaget då begreppet postas, i svensk tid.
+POSTNINGSTID = dt.time(9, 30)
 EXEMPELTYP = {"verkligt": "Verkligt exempel", "illustrativt": "Illustrativt exempel"}
 MANADER = ["januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september",
            "oktober", "november", "december"]
 VECKODAGAR = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag"]
+
+
+def schemalagd_tid(schema: str, nu: dt.datetime) -> dt.datetime | None:
+    """Tidpunkten i svensk tid då en körning med cron-schemat `schema` (i UTC) var planerad,
+    samma UTC-dygn som `nu`. Utgår från schemat och inte från när körningen faktiskt startade,
+    eftersom GitHub kan starta schemalagda körningar flera minuter sent. `None` om schemat inte
+    är en daglig tid som "30 7 * * *"."""
+    delar = schema.split()
+    if len(delar) != 5 or not delar[0].isdigit() or not delar[1].isdigit() or delar[2:] != ["*", "*", "*"]:
+        return None
+    dygn = nu.astimezone(UTC).date()
+    planerad = dt.datetime(dygn.year, dygn.month, dygn.day, int(delar[1]), int(delar[0]), tzinfo=UTC)
+    return planerad.astimezone(TIDSZON)
+
+
+def ska_posta(schema: str, nu: dt.datetime) -> bool:
+    """`True` om den schemalagda körningen motsvarar 09.30 i Stockholm med dagens tidsskillnad mot
+    UTC. Av de två scheman som arbetsflödet har stämmer det för exakt ett varje dag."""
+    tid = schemalagd_tid(schema, nu)
+    return tid is not None and tid.timetz().replace(tzinfo=None) == POSTNINGSTID
 
 
 def dagens_begrepp(fil: dict, idag: dt.date) -> dict | None:
@@ -71,14 +101,28 @@ def posta(webhook: str, data: dict) -> None:
             raise RuntimeError(f"Slack svarade med felkod {svar.status}.")
 
 
-def main(argv: list[str] | None = None) -> int:
+def main(argv: list[str] | None = None, nu: dt.datetime | None = None) -> int:
+    """`nu` är klockan i UTC, för tester; standard är nu."""
     parser = argparse.ArgumentParser(description="Postar dagens begrepp i Slack.")
     parser.add_argument("--fil", default="begrepp.json")
     parser.add_argument("--datum", metavar="ÅÅÅÅ-MM-DD", help="annan dag än i dag, för att prova")
     parser.add_argument("--prova", action="store_true", help="skriv ut meddelandet i stället för att posta")
+    parser.add_argument("--schema", metavar="CRON",
+                        help="schemat som startade körningen (github.event.schedule); postar bara om det är 09.30 svensk tid")
     args = parser.parse_args(argv)
 
-    idag = dt.date.fromisoformat(args.datum) if args.datum else dt.datetime.now(TIDSZON).date()
+    nu = nu or dt.datetime.now(UTC)
+    if args.schema:
+        if not ska_posta(args.schema, nu):
+            tid = schemalagd_tid(args.schema, nu)
+            klockslag = tid.strftime("%H.%M") if tid else "okänd tid"
+            print(f"Schemat \"{args.schema}\" motsvarar {klockslag} svensk tid i dag, inte 09.30. Inget postas.")
+            return 0
+        idag = schemalagd_tid(args.schema, nu).date()
+    else:
+        idag = nu.astimezone(TIDSZON).date()
+    if args.datum:
+        idag = dt.date.fromisoformat(args.datum)
     with open(args.fil, encoding="utf-8") as f:
         fil = json.load(f)
 

@@ -1,11 +1,22 @@
 name: Posta i Slack
 
-# Postar dagens begrepp i Slack-kanalen varje morgon. Tiden anges i UTC: 06:00 UTC är 07:00 på
-# vintern och 08:00 på sommaren i Sverige. GitHub kan starta schemalagda jobb några minuter sent.
+# Postar dagens begrepp i Slack-kanalen klockan 09.30 svensk tid, både sommar och vinter.
+#
+# GitHub anger scheman i UTC och känner inte till sommartid. Arbetsflödet körs därför både
+# 07.30 UTC (09.30 på sommaren) och 08.30 UTC (09.30 på vintern). Skriptet får schemat som
+# startade körningen och postar bara när det motsvarar 09.30 i Stockholm den dagen, så begreppet
+# postas en gång per dag, även när klockan ställs om. GitHub kan starta schemalagda körningar några
+# minuter sent; skriptet räknar från schemat, inte från när körningen startade.
+#
+# Schemalagda arbetsflöden i publika repon stängs av efter 60 dagar utan aktivitet i repot. Den
+# första varje månad återaktiverar jobbet "hall-aktivt" därför arbetsflödet via GitHubs API, så att
+# det aldrig hinner gå 60 dagar.
 on:
   schedule:
-    - cron: "1 0 * * *"
-  # Manuell körning från fliken Actions, t.ex. för att prova.
+    - cron: "30 7 * * *"
+    - cron: "30 8 * * *"
+    - cron: "0 4 1 * *"
+  # Manuell körning från fliken Actions, t.ex. för att prova. Postar direkt, oavsett klockslag.
   workflow_dispatch:
     inputs:
       datum:
@@ -16,8 +27,12 @@ on:
         type: boolean
         default: true
 
+permissions:
+  contents: read
+
 jobs:
   posta:
+    if: github.event.schedule != '0 4 1 * *'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -29,10 +44,26 @@ jobs:
       - name: Posta dagens begrepp
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          # Tomt vid manuell körning; då postas det direkt, som förut.
+          SCHEMA: ${{ github.event.schedule }}
           DATUM: ${{ inputs.datum }}
           PROVA: ${{ inputs.prova }}
         run: |
-          ARGS=""
-          if [ -n "$DATUM" ]; then ARGS="$ARGS --datum $DATUM"; fi
-          if [ "$PROVA" = "true" ]; then ARGS="$ARGS --prova"; fi
-          python scripts/posta_slack.py $ARGS
+          set -- --fil begrepp.json
+          if [ -n "$SCHEMA" ]; then set -- "$@" --schema "$SCHEMA"; fi
+          if [ -n "$DATUM" ]; then set -- "$@" --datum "$DATUM"; fi
+          if [ "$PROVA" = "true" ]; then set -- "$@" --prova; fi
+          python scripts/posta_slack.py "$@"
+
+  hall-aktivt:
+    if: github.event.schedule == '0 4 1 * *'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Återaktivera arbetsflödet
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method PUT "repos/${{ github.repository }}/actions/workflows/slack.yml/enable"
+          echo "Posta i Slack är aktivt. Nästa återaktivering sker den första nästa månad."
