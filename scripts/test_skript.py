@@ -231,7 +231,8 @@ class PostaSlackTests(unittest.TestCase):
         self.assertIn("Strategi och affär · Tisdag 3 november", text)
         self.assertIn("Pris &amp; värde &lt;i&gt; fokus.", text)
         self.assertIn("*Illustrativt exempel*", text)
-        self.assertIn("*Kärnan:* Kärnan.", text)
+        karnan = next(b["text"]["text"] for b in data["blocks"] if "Kärnan" in b.get("text", {}).get("text", ""))
+        self.assertEqual(karnan, ":round_pushpin: *Kärnan:* Kärnan.\n\u200b")
         self.assertIn("*Nyckelord:* term", text)
         self.assertIn("*Läs vidare:* <https://www.google.com/search?q=s%C3%B6kord|sökord>", text)
 

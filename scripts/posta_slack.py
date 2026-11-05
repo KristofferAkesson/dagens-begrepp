@@ -87,7 +87,10 @@ def meddelande(b: dict, idag: dt.date) -> dict:
         {"type": "section", "text": {"type": "mrkdwn", "text": _escape(b["brodtext"])}},
         {"type": "section", "text": {"type": "mrkdwn",
                                      "text": f"*{EXEMPELTYP.get(b.get('exempel_typ', ''), 'Exempel')}*\n{_escape(b['exempel'])}"}},
-        {"type": "section", "text": {"type": "mrkdwn", "text": f"*Kärnan:* {_escape(b['karnan'])}"}},
+        # Slack tar bort tomma rader sist i ett block; det osynliga tecknet håller kvar en blankrad
+        # mellan Kärnan och nyckelorden.
+        {"type": "section", "text": {"type": "mrkdwn",
+                                     "text": f":round_pushpin: *Kärnan:* {_escape(b['karnan'])}\n\u200b"}},
     ]
     detaljer = []
     if b.get("termer"):
