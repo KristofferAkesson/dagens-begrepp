@@ -233,7 +233,14 @@ class PostaSlackTests(unittest.TestCase):
         self.assertIn("*Illustrativt exempel*", text)
         self.assertIn("*Kärnan:* Kärnan.", text)
         self.assertIn("*Nyckelord:* term", text)
-        self.assertIn("*Läs vidare:* sökord", text)
+        self.assertIn("*Läs vidare:* <https://www.google.com/search?q=s%C3%B6kord|sökord>", text)
+
+    def test_las_vidare_blir_google_sokningar(self):
+        self.assertEqual(posta_slack.sokning("Byron Sharp How Brands Grow"),
+                         "<https://www.google.com/search?q=Byron+Sharp+How+Brands+Grow|Byron Sharp How Brands Grow>")
+        # Tecken som Slack tolkar escapas i texten och kodas i adressen.
+        self.assertEqual(posta_slack.sokning("A&B <test>"),
+                         "<https://www.google.com/search?q=A%26B+%3Ctest%3E|A&amp;B &lt;test&gt;>")
 
     def test_prova_postar_inte(self):
         import contextlib

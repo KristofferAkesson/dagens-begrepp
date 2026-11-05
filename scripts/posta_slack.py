@@ -27,6 +27,7 @@ import datetime as dt
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
 from zoneinfo import ZoneInfo
 
@@ -71,6 +72,12 @@ def _escape(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+def sokning(fraga: str) -> str:
+    """Ett förslag under Läs vidare som Slack-länk till en Google-sökning med förslaget ifyllt."""
+    url = "https://www.google.com/search?q=" + urllib.parse.quote_plus(fraga)
+    return f"<{url}|{_escape(fraga)}>"
+
+
 def meddelande(b: dict, idag: dt.date) -> dict:
     """Ett Slack-meddelande med samma delar som korten i appen."""
     datum = f"{VECKODAGAR[idag.weekday()]} {idag.day} {MANADER[idag.month - 1]}"
@@ -86,7 +93,7 @@ def meddelande(b: dict, idag: dt.date) -> dict:
     if b.get("termer"):
         detaljer.append(f"*Nyckelord:* {_escape(', '.join(b['termer']))}")
     if b.get("las_vidare"):
-        detaljer.append(f"*Läs vidare:* {_escape(', '.join(b['las_vidare']))}")
+        detaljer.append("*Läs vidare:* " + ", ".join(sokning(fraga) for fraga in b["las_vidare"]))
     if detaljer:
         block.append({"type": "context", "elements": [{"type": "mrkdwn", "text": t} for t in detaljer]})
     # `text` visas i notiser och där block inte kan visas.
