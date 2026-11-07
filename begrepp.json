@@ -1,7 +1,7 @@
 {
   "app": "Dagens begrepp",
   "schema_version": 4,
-  "innehallsversion": "2026-11-05",
+  "innehallsversion": "2026-11-07",
   "begrepp": [
     {
       "id": "2026-q4-001",
@@ -197,8 +197,29 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-010",
+      "id": "2026-q4-011",
       "datum": "2026-11-12",
+      "omrade": "Kundinsikt och kundupplevelse",
+      "rubrik": "Förlustaversion",
+      "brodtext": "Förlustaversion innebär att en förlust känns starkare än en lika stor vinst, i många studier ungefär dubbelt så stark. Begreppet kommer från Daniel Kahneman och Amos Tverskys prospect theory. Det förklarar varför människor ofta stannar kvar i dåliga avtal, varför gratisperioder fungerar så bra och varför samma erbjudande kan få olika respons beroende på hur det formuleras. Inom kommunikation kallas det framing: att beskriva vad kunden riskerar att förlora kan vara mer motiverande än att beskriva vad hen vinner. Effekten ska dock användas med omdöme, eftersom överdriven skrämselretorik kan skada förtroendet.",
+      "exempel": "En energikampanj som säger ”Du förlorar 3 000 kronor om året på ett dåligt isolerat hus” får ofta större effekt än ”Spara 3 000 kronor om året”, trots att siffran och sakfrågan är exakt densamma.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Människor anstränger sig mer för att undvika förluster än för att göra vinster.",
+      "termer": [
+        "loss aversion",
+        "prospect theory",
+        "framing"
+      ],
+      "las_vidare": [
+        "Kahneman Thinking Fast and Slow",
+        "loss aversion marketing"
+      ],
+      "period": "Månad 1",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-010",
+      "datum": "2026-11-13",
       "omrade": "Varumärke och tillväxt",
       "rubrik": "Varumärkesarkitektur",
       "brodtext": "Varumärkesarkitektur beskriver hur ett företags varumärken förhåller sig till varandra. David Aaker beskriver ett spektrum med två ytterligheter. Branded house: ett huvudvarumärke bär allt, och erbjudanden skiljs åt med beskrivande namn. House of brands: varje produkt har ett eget, fristående varumärke. Mellan dem finns till exempel endorsed brands, där ett eget varumärke stöds av moderbolagets namn. Valet påverkar hur värde byggs: ett branded house samlar kraften men gör alla delar sårbara om något går fel, medan ett house of brands kan rikta sig till olika målgrupper men kostar mer att bygga och underhålla.",
@@ -214,27 +235,6 @@
       "las_vidare": [
         "David Aaker brand relationship spectrum",
         "brand architecture examples"
-      ],
-      "period": "Månad 1",
-      "granskad": "2026-10-17"
-    },
-    {
-      "id": "2026-q4-011",
-      "datum": "2026-11-13",
-      "omrade": "Kundinsikt och kundupplevelse",
-      "rubrik": "Förlustaversion",
-      "brodtext": "Förlustaversion innebär att en förlust känns starkare än en lika stor vinst, i många studier ungefär dubbelt så stark. Begreppet kommer från Daniel Kahneman och Amos Tverskys prospect theory. Det förklarar varför människor ofta stannar kvar i dåliga avtal, varför gratisperioder fungerar så bra och varför samma erbjudande kan få olika respons beroende på hur det formuleras. Inom kommunikation kallas det framing: att beskriva vad kunden riskerar att förlora kan vara mer motiverande än att beskriva vad hen vinner. Effekten ska dock användas med omdöme, eftersom överdriven skrämselretorik kan skada förtroendet.",
-      "exempel": "En energikampanj som säger ”Du förlorar 3 000 kronor om året på ett dåligt isolerat hus” får ofta större effekt än ”Spara 3 000 kronor om året”, trots att siffran och sakfrågan är exakt densamma.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Människor anstränger sig mer för att undvika förluster än för att göra vinster.",
-      "termer": [
-        "loss aversion",
-        "prospect theory",
-        "framing"
-      ],
-      "las_vidare": [
-        "Kahneman Thinking Fast and Slow",
-        "loss aversion marketing"
       ],
       "period": "Månad 1",
       "granskad": "2026-10-17"
@@ -262,23 +262,22 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-013",
+      "id": "2026-q4-016",
       "datum": "2026-11-15",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "När AI-agenter handlar",
-      "brodtext": "AI-agenter är system som inte bara svarar på frågor utan kan utföra uppgifter åt användaren, som att jämföra alternativ, boka eller handla. Om en växande del av köpresan sköts av agenter förändras vem marknadsföringen egentligen riktar sig till. En agent påverkas inte av en känslosam film, men den läser produktdata, priser, recensioner, tillgänglighet och villkor. Det gör strukturerad och korrekt information till en konkurrensfördel. Samtidigt bestämmer människan fortfarande vilka varumärken agenten ska överväga eller undvika, så varumärkesbyggande blir knappast mindre viktigt.",
-      "exempel": "Om någon ber sin assistent att ”boka ett hotell nära Centralen i Göteborg för under 1 500 kronor med frukost” har det hotell vars information är tydlig och maskinläsbar ett försprång. Hotell med otydliga uppgifter om pris och frukost kanske aldrig ens kommer med i urvalet.",
+      "omrade": "Varumärke och tillväxt",
+      "rubrik": "Excess share of voice",
+      "brodtext": "Excess share of voice (ESOV) är skillnaden mellan ett varumärkes andel av kategorins totala reklaminvesteringar och dess marknadsandel. Om du har 20 procent av marknaden men står för 25 procent av reklamen har du en ESOV på 5 procentenheter. Forskning från bland andra Les Binet och Peter Field visar att varumärken med positiv ESOV tenderar att växa, i genomsnitt ungefär en halv procentenhet marknadsandel per år för varje tio procentenheter ESOV. Sambandet är ingen garanti, men en användbar kompass när budgeten ska motiveras och sättas i relation till konkurrenterna.",
+      "exempel": "En utmanare med 10 procents marknadsandel vill växa. I stället för att diskutera budgeten i absoluta kronor jämför teamet sin share of voice med marknadsandelen och ser att de syns mindre än de säljer. Det blir en tydligare grund för att begära mer budget.",
       "exempel_typ": "illustrativt",
-      "karnan": "När maskiner handlar åt människor blir tydlig data en del av varumärket.",
+      "karnan": "Varumärken som syns mer än de säljer tenderar att växa.",
       "termer": [
-        "AI agents",
-        "agentic commerce",
-        "structured data",
-        "machine-readable"
+        "share of voice",
+        "share of market",
+        "excess share of voice"
       ],
       "las_vidare": [
-        "agentic commerce",
-        "AI agents marketing implications"
+        "Binet Field ESOV",
+        "IPA Media in Focus"
       ],
       "period": "Månad 1",
       "granskad": "2026-10-17"
@@ -328,29 +327,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-016",
-      "datum": "2026-11-18",
-      "omrade": "Varumärke och tillväxt",
-      "rubrik": "Excess share of voice",
-      "brodtext": "Excess share of voice (ESOV) är skillnaden mellan ett varumärkes andel av kategorins totala reklaminvesteringar och dess marknadsandel. Om du har 20 procent av marknaden men står för 25 procent av reklamen har du en ESOV på 5 procentenheter. Forskning från bland andra Les Binet och Peter Field visar att varumärken med positiv ESOV tenderar att växa, i genomsnitt ungefär en halv procentenhet marknadsandel per år för varje tio procentenheter ESOV. Sambandet är ingen garanti, men en användbar kompass när budgeten ska motiveras och sättas i relation till konkurrenterna.",
-      "exempel": "En utmanare med 10 procents marknadsandel vill växa. I stället för att diskutera budgeten i absoluta kronor jämför teamet sin share of voice med marknadsandelen och ser att de syns mindre än de säljer. Det blir en tydligare grund för att begära mer budget.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Varumärken som syns mer än de säljer tenderar att växa.",
-      "termer": [
-        "share of voice",
-        "share of market",
-        "excess share of voice"
-      ],
-      "las_vidare": [
-        "Binet Field ESOV",
-        "IPA Media in Focus"
-      ],
-      "period": "Månad 1",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-017",
-      "datum": "2026-11-19",
+      "datum": "2026-11-18",
       "omrade": "Varumärke och tillväxt",
       "rubrik": "Points of parity och points of difference",
       "brodtext": "Kevin Lane Keller beskriver positionering som en kombination av tre beståndsdelar. Referensram: vilken kategori och vilka alternativ varumärket jämförs med. Points of parity: det varumärket måste vara lika bra på som konkurrenterna för att ens komma i fråga. Points of difference: det som gör varumärket unikt och som kunden faktiskt värderar. Ett vanligt misstag är att lägga all energi på skillnaderna och glömma likheterna. Om kunden tvivlar på att grunderna finns på plats spelar det ingen roll hur unik du är. Ett annat misstag är att välja skillnader som är sanna men inte relevanta.",
@@ -366,6 +344,28 @@
       "las_vidare": [
         "Keller Sternthal Tybout Three Questions You Need to Ask About Your Brand",
         "Kevin Lane Keller positioning"
+      ],
+      "period": "Månad 1",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-013",
+      "datum": "2026-11-19",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "När AI-agenter handlar",
+      "brodtext": "AI-agenter är system som inte bara svarar på frågor utan kan utföra uppgifter åt användaren, som att jämföra alternativ, boka eller handla. Om en växande del av köpresan sköts av agenter förändras vem marknadsföringen egentligen riktar sig till. En agent påverkas inte av en känslosam film, men den läser produktdata, priser, recensioner, tillgänglighet och villkor. Det gör strukturerad och korrekt information till en konkurrensfördel. Samtidigt bestämmer människan fortfarande vilka varumärken agenten ska överväga eller undvika, så varumärkesbyggande blir knappast mindre viktigt.",
+      "exempel": "Om någon ber sin assistent att ”boka ett hotell nära Centralen i Göteborg för under 1 500 kronor med frukost” har det hotell vars information är tydlig och maskinläsbar ett försprång. Hotell med otydliga uppgifter om pris och frukost kanske aldrig ens kommer med i urvalet.",
+      "exempel_typ": "illustrativt",
+      "karnan": "När maskiner handlar åt människor blir tydlig data en del av varumärket.",
+      "termer": [
+        "AI agents",
+        "agentic commerce",
+        "structured data",
+        "machine-readable"
+      ],
+      "las_vidare": [
+        "agentic commerce",
+        "AI agents marketing implications"
       ],
       "period": "Månad 1",
       "granskad": "2026-10-17"
@@ -415,30 +415,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-020",
-      "datum": "2026-11-22",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Human in the loop",
-      "brodtext": "Human in the loop innebär att en människa granskar, justerar eller godkänner det som AI producerar innan det används. När generativ AI blir en del av innehållsproduktionen gäller det att avgöra var i processen människor gör mest nytta. Typiska kontrollpunkter är briefen, där riktningen sätts, faktagranskningen, där AI:ns tendens att hitta på saker fångas upp, och slutgodkännandet, där tonalitet och varumärkesrisk bedöms. Ju högre risk, som juridiska påståenden eller känsliga ämnen, desto tätare kontroll. Ju lägre risk, desto mer kan automatiseras.",
-      "exempel": "En byrå låter AI ta fram första utkast till produkttexter för en webbutik. Tonaliteten styrs av en skrivguide, en redaktör stickprovsgranskar varje omgång och alla påståenden om miljö eller hälsa kontrolleras manuellt före publicering.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Lägg den mänskliga granskningen där misstagen kostar mest.",
-      "termer": [
-        "human in the loop",
-        "hallucination",
-        "content operations",
-        "guardrails"
-      ],
-      "las_vidare": [
-        "human in the loop generative AI",
-        "AI content governance"
-      ],
-      "period": "Månad 1",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-021",
-      "datum": "2026-11-23",
+      "datum": "2026-11-22",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "NPS och dess gränser",
       "brodtext": "Net Promoter Score (NPS) lanserades av Fred Reichheld 2003 och bygger på en enda fråga: hur troligt är det att du skulle rekommendera oss till en vän eller kollega, på en skala från 0 till 10? Andelen som svarar 0–6 dras från andelen som svarar 9–10. Styrkan är enkelheten, som gör NPS lätt att följa över tid. Kritiken är dock omfattande: ett enda tal döljer mycket, sambandet med tillväxt varierar mellan branscher och ett högt tal säger inget om varför. NPS fungerar bäst som en signal som kompletteras med öppna svar och beteendedata, som faktiska återköp och churn.",
@@ -454,6 +432,28 @@
       "las_vidare": [
         "Reichheld The One Number You Need to Grow",
         "NPS criticism"
+      ],
+      "period": "Månad 1",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-020",
+      "datum": "2026-11-23",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Human in the loop",
+      "brodtext": "Human in the loop innebär att en människa granskar, justerar eller godkänner det som AI producerar innan det används. När generativ AI blir en del av innehållsproduktionen gäller det att avgöra var i processen människor gör mest nytta. Typiska kontrollpunkter är briefen, där riktningen sätts, faktagranskningen, där AI:ns tendens att hitta på saker fångas upp, och slutgodkännandet, där tonalitet och varumärkesrisk bedöms. Ju högre risk, som juridiska påståenden eller känsliga ämnen, desto tätare kontroll. Ju lägre risk, desto mer kan automatiseras.",
+      "exempel": "En byrå låter AI ta fram första utkast till produkttexter för en webbutik. Tonaliteten styrs av en skrivguide, en redaktör stickprovsgranskar varje omgång och alla påståenden om miljö eller hälsa kontrolleras manuellt före publicering.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Lägg den mänskliga granskningen där misstagen kostar mest.",
+      "termer": [
+        "human in the loop",
+        "hallucination",
+        "content operations",
+        "guardrails"
+      ],
+      "las_vidare": [
+        "human in the loop generative AI",
+        "AI content governance"
       ],
       "period": "Månad 1",
       "granskad": "2026-10-17"
@@ -1347,29 +1347,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-063",
-      "datum": "2027-01-04",
-      "omrade": "Kundinsikt och kundupplevelse",
-      "rubrik": "Valöverflöd",
-      "brodtext": "Valöverflöd, eller choice overload, är idén att för många alternativ kan göra det svårare att välja och leda till att man inte väljer alls. Den mest kända studien gjordes av Sheena Iyengar och Mark Lepper: fler köpte sylt när ett smakbord erbjöd sex sorter än när det erbjöd tjugofyra. Senare forskning har dock visat att effekten långt ifrån alltid uppstår. En metaanalys fann att den genomsnittliga effekten var nära noll, men att den syns under vissa villkor: när alternativen är svåra att jämföra, när man saknar tydliga preferenser och när beslutet känns viktigt.",
-      "exempel": "En webbutik säljer fyrtio olika ansiktskrämer utan vägledning, och många besökare lämnar utan att köpa. När butiken i stället lyfter fram tre krämer utifrån hudtyp, med möjlighet att se hela sortimentet, ökar andelen som handlar.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Många val förlamar när de är svåra att jämföra. Hjälp kunden att sortera.",
-      "termer": [
-        "choice overload",
-        "decision fatigue",
-        "curation"
-      ],
-      "las_vidare": [
-        "Iyengar Lepper jam study",
-        "Scheibehenne choice overload meta-analysis"
-      ],
-      "period": "Månad 3",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-064",
-      "datum": "2027-01-05",
+      "datum": "2027-01-04",
       "omrade": "Varumärke och tillväxt",
       "rubrik": "Rabatternas baksida",
       "brodtext": "Prisrabatter ger nästan alltid en tydlig försäljningstopp, vilket gör dem frestande. Men forskning, bland annat från Ehrenberg-Bass Institute, visar att det mesta av den extra försäljningen kommer från befintliga köpare som ändå hade handlat, nu till lägre pris eller tidigare än annars. Efter kampanjen följer ofta en dipp. Nya köpare som lockas av rabatten återvänder sällan i högre grad efteråt. Återkommande rabatter kan dessutom lära kunderna att vänta på nästa erbjudande och sänka det pris de tycker är rimligt. Rabatter har sin plats, men de bygger sällan varumärken.",
@@ -1385,6 +1364,27 @@
       "las_vidare": [
         "Ehrenberg-Bass price promotions",
         "price promotion long term effects"
+      ],
+      "period": "Månad 3",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-063",
+      "datum": "2027-01-05",
+      "omrade": "Kundinsikt och kundupplevelse",
+      "rubrik": "Valöverflöd",
+      "brodtext": "Valöverflöd, eller choice overload, är idén att för många alternativ kan göra det svårare att välja och leda till att man inte väljer alls. Den mest kända studien gjordes av Sheena Iyengar och Mark Lepper: fler köpte sylt när ett smakbord erbjöd sex sorter än när det erbjöd tjugofyra. Senare forskning har dock visat att effekten långt ifrån alltid uppstår. En metaanalys fann att den genomsnittliga effekten var nära noll, men att den syns under vissa villkor: när alternativen är svåra att jämföra, när man saknar tydliga preferenser och när beslutet känns viktigt.",
+      "exempel": "En webbutik säljer fyrtio olika ansiktskrämer utan vägledning, och många besökare lämnar utan att köpa. När butiken i stället lyfter fram tre krämer utifrån hudtyp, med möjlighet att se hela sortimentet, ökar andelen som handlar.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Många val förlamar när de är svåra att jämföra. Hjälp kunden att sortera.",
+      "termer": [
+        "choice overload",
+        "decision fatigue",
+        "curation"
+      ],
+      "las_vidare": [
+        "Iyengar Lepper jam study",
+        "Scheibehenne choice overload meta-analysis"
       ],
       "period": "Månad 3",
       "granskad": "2026-10-17"
@@ -1522,23 +1522,23 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-071",
+      "id": "2026-q4-074",
       "datum": "2027-01-12",
-      "omrade": "Innovation och arbetsmetoder",
-      "rubrik": "Disruptiv innovation",
-      "brodtext": "Disruptiv innovation används ofta om allt nytt och omvälvande, men Clayton Christensen, som beskrev begreppet i The Innovator's Dilemma 1997, menade något mer specifikt. En disruptiv innovation börjar i den nedre delen av en marknad, eller på en helt ny marknad, med en produkt som är sämre men enklare och billigare än den etablerade. De etablerade aktörerna ignorerar den, eftersom deras mest lönsamma kunder inte efterfrågar den. Med tiden blir den nya lösningen tillräckligt bra för allt fler, och när de etablerade reagerar är det ofta för sent.",
-      "exempel": "Christensens klassiska exempel är stålindustrin. Små ministålverk började med att tillverka armeringsjärn av låg kvalitet, en olönsam nisch som de stora stålverken gärna lämnade ifrån sig. Steg för steg tog ministålverken sig uppåt i kvalitet och tog till slut över stora delar av marknaden.",
-      "exempel_typ": "verkligt",
-      "karnan": "Disruption börjar i det enkla och billiga, där de etablerade inte vill vara.",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Kika inte på A/B-testet",
+      "brodtext": "A/B-tester är ett av de säkraste sätten att mäta effekten av en förändring på en webbplats eller i en kampanj. Men ett vanligt fel förstör ofta resultatet: att titta på testet medan det pågår och avsluta det så fort en version ser ut att vinna. Eftersom resultaten svänger slumpmässigt, särskilt i början, kommer man med stor sannolikhet någon gång att se en vinnare som egentligen inte finns. Lösningen är att bestämma testets längd och urvalsstorlek i förväg och låta det gå klart, eller att använda statistiska metoder som är gjorda för löpande uppföljning.",
+      "exempel": "Ett team testar två varianter av en köpknapp. Efter tre dagar leder den gröna knappen tydligt och testet avslutas. När samma test görs om med förutbestämd längd försvinner skillnaden. Den första vinsten var slumpens.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Bestäm testets längd i förväg och låt det gå klart.",
       "termer": [
-        "disruptive innovation",
-        "sustaining innovation",
-        "low-end disruption",
-        "innovator's dilemma"
+        "A/B testing",
+        "peeking",
+        "statistical significance",
+        "sample size"
       ],
       "las_vidare": [
-        "Clayton Christensen The Innovator's Dilemma",
-        "What Is Disruptive Innovation HBR 2015"
+        "A/B test peeking problem",
+        "Evan Miller How Not To Run an A/B Test"
       ],
       "period": "Månad 3",
       "granskad": "2026-10-17"
@@ -1586,23 +1586,23 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-074",
+      "id": "2026-q4-071",
       "datum": "2027-01-15",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Kika inte på A/B-testet",
-      "brodtext": "A/B-tester är ett av de säkraste sätten att mäta effekten av en förändring på en webbplats eller i en kampanj. Men ett vanligt fel förstör ofta resultatet: att titta på testet medan det pågår och avsluta det så fort en version ser ut att vinna. Eftersom resultaten svänger slumpmässigt, särskilt i början, kommer man med stor sannolikhet någon gång att se en vinnare som egentligen inte finns. Lösningen är att bestämma testets längd och urvalsstorlek i förväg och låta det gå klart, eller att använda statistiska metoder som är gjorda för löpande uppföljning.",
-      "exempel": "Ett team testar två varianter av en köpknapp. Efter tre dagar leder den gröna knappen tydligt och testet avslutas. När samma test görs om med förutbestämd längd försvinner skillnaden. Den första vinsten var slumpens.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Bestäm testets längd i förväg och låt det gå klart.",
+      "omrade": "Innovation och arbetsmetoder",
+      "rubrik": "Disruptiv innovation",
+      "brodtext": "Disruptiv innovation används ofta om allt nytt och omvälvande, men Clayton Christensen, som beskrev begreppet i The Innovator's Dilemma 1997, menade något mer specifikt. En disruptiv innovation börjar i den nedre delen av en marknad, eller på en helt ny marknad, med en produkt som är sämre men enklare och billigare än den etablerade. De etablerade aktörerna ignorerar den, eftersom deras mest lönsamma kunder inte efterfrågar den. Med tiden blir den nya lösningen tillräckligt bra för allt fler, och när de etablerade reagerar är det ofta för sent.",
+      "exempel": "Christensens klassiska exempel är stålindustrin. Små ministålverk började med att tillverka armeringsjärn av låg kvalitet, en olönsam nisch som de stora stålverken gärna lämnade ifrån sig. Steg för steg tog ministålverken sig uppåt i kvalitet och tog till slut över stora delar av marknaden.",
+      "exempel_typ": "verkligt",
+      "karnan": "Disruption börjar i det enkla och billiga, där de etablerade inte vill vara.",
       "termer": [
-        "A/B testing",
-        "peeking",
-        "statistical significance",
-        "sample size"
+        "disruptive innovation",
+        "sustaining innovation",
+        "low-end disruption",
+        "innovator's dilemma"
       ],
       "las_vidare": [
-        "A/B test peeking problem",
-        "Evan Miller How Not To Run an A/B Test"
+        "Clayton Christensen The Innovator's Dilemma",
+        "What Is Disruptive Innovation HBR 2015"
       ],
       "period": "Månad 3",
       "granskad": "2026-10-17"
@@ -1823,29 +1823,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-085",
-      "datum": "2027-01-26",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Bygga, köpa eller samarbeta",
-      "brodtext": "När en organisation behöver en ny digital förmåga finns tre vägar: bygga själv, köpa en färdig lösning eller samarbeta med en partner. Att bygga ger kontroll och möjlighet att skapa något unikt, men kräver kompetens och långsiktigt underhåll. Att köpa går snabbare och delar kostnaden med andra kunder, men gör organisationen beroende av leverantörens utveckling. Ett samarbete kan ge tillgång till förmågor man saknar, men kräver att intressena håller ihop över tid. En användbar tumregel är att bygga det som skapar verklig konkurrensfördel och köpa resten.",
-      "exempel": "En detaljhandelskedja behöver både ett lönesystem och en motor för personliga erbjudanden. Lönesystemet köps som standard, eftersom det inte skiljer kedjan från konkurrenterna. Erbjudandemotorn, som bygger på kedjans egen kunddata, utvecklas internt.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Bygg det som gör er unika och köp det som alla behöver.",
-      "termer": [
-        "build vs buy",
-        "core vs context",
-        "vendor lock-in"
-      ],
-      "las_vidare": [
-        "build vs buy software decision",
-        "Geoffrey Moore core vs context"
-      ],
-      "period": "Månad 4",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-086",
-      "datum": "2027-01-27",
+      "datum": "2027-01-26",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "När misstaget blir en möjlighet",
       "brodtext": "Service recovery-paradoxen är idén att en kund som råkat ut för ett problem som sedan löses mycket bra kan bli mer nöjd än om problemet aldrig hade uppstått. Forskningen ger stöd för att en god hantering kan höja nöjdheten, men en metaanalys från 2007 fann ingen motsvarande effekt på lojalitet och återköp. Lärdomen är att hanteringen av ett misstag betyder mycket för hur kunden minns det. Snabb respons, ett ärligt erkännande och en lösning som går längre än kunden väntat kan rädda en relation som annars hade gått förlorad.",
@@ -1860,6 +1839,27 @@
       "las_vidare": [
         "service recovery paradox meta-analysis",
         "de Matos Henrique Rossi 2007 service recovery"
+      ],
+      "period": "Månad 4",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-085",
+      "datum": "2027-01-27",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Bygga, köpa eller samarbeta",
+      "brodtext": "När en organisation behöver en ny digital förmåga finns tre vägar: bygga själv, köpa en färdig lösning eller samarbeta med en partner. Att bygga ger kontroll och möjlighet att skapa något unikt, men kräver kompetens och långsiktigt underhåll. Att köpa går snabbare och delar kostnaden med andra kunder, men gör organisationen beroende av leverantörens utveckling. Ett samarbete kan ge tillgång till förmågor man saknar, men kräver att intressena håller ihop över tid. En användbar tumregel är att bygga det som skapar verklig konkurrensfördel och köpa resten.",
+      "exempel": "En detaljhandelskedja behöver både ett lönesystem och en motor för personliga erbjudanden. Lönesystemet köps som standard, eftersom det inte skiljer kedjan från konkurrenterna. Erbjudandemotorn, som bygger på kedjans egen kunddata, utvecklas internt.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Bygg det som gör er unika och köp det som alla behöver.",
+      "termer": [
+        "build vs buy",
+        "core vs context",
+        "vendor lock-in"
+      ],
+      "las_vidare": [
+        "build vs buy software decision",
+        "Geoffrey Moore core vs context"
       ],
       "period": "Månad 4",
       "granskad": "2026-10-17"
@@ -2086,30 +2086,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-097",
-      "datum": "2027-02-07",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Personalisering",
-      "brodtext": "Personalisering innebär att innehåll, erbjudanden eller upplevelser anpassas efter den enskilda användaren. Den kan vara regelstyrd, där människor bestämmer vad olika grupper ska se, eller algoritmisk, där system lär sig av beteendedata vad som fungerar. Regelstyrd personalisering är enkel att förstå och styra men svår att skala. Algoritmisk personalisering kan bli mycket träffsäker men kräver stora datamängder. Det vanligaste misstaget är att börja i tekniken. Bra personalisering börjar i frågan om vilken skillnad den ska göra för kunden, och om det finns tillräckligt med innehåll att variera.",
-      "exempel": "Spotify Wrapped sammanställer varje år användarens lyssnande till en personlig berättelse som många väljer att dela. Personaliseringen ger relevans och blir samtidigt marknadsföring, eftersom användarna sprider varumärket själva.",
-      "exempel_typ": "verkligt",
-      "karnan": "Personalisering börjar i vad den ska göra för kunden.",
-      "termer": [
-        "personalization",
-        "rule-based",
-        "algorithmic",
-        "recommendation engine"
-      ],
-      "las_vidare": [
-        "personalization strategy",
-        "Spotify Wrapped marketing case"
-      ],
-      "period": "Månad 4",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-098",
-      "datum": "2027-02-08",
+      "datum": "2027-02-07",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Personas som gör skillnad",
       "brodtext": "Personas är beskrivningar av fiktiva men representativa användare, som används för att hålla användarnas behov levande under ett utvecklingsarbete. Begreppet populariserades av Alan Cooper. Personas fungerar bra när de bygger på verklig research och beskriver mål, beteenden och sammanhang. De fungerar dåligt när de bygger på antaganden och fylls med detaljer som ålder, hobbyer och namn på husdjur, som inte påverkar några beslut. Då riskerar de att bekräfta fördomar i stället för att utmana dem. Ett bra test är att fråga om personan någon gång har ändrat ett beslut.",
@@ -2125,6 +2103,28 @@
       "las_vidare": [
         "Alan Cooper The Inmates Are Running the Asylum",
         "Nielsen Norman Group personas"
+      ],
+      "period": "Månad 4",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-097",
+      "datum": "2027-02-08",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Personalisering",
+      "brodtext": "Personalisering innebär att innehåll, erbjudanden eller upplevelser anpassas efter den enskilda användaren. Den kan vara regelstyrd, där människor bestämmer vad olika grupper ska se, eller algoritmisk, där system lär sig av beteendedata vad som fungerar. Regelstyrd personalisering är enkel att förstå och styra men svår att skala. Algoritmisk personalisering kan bli mycket träffsäker men kräver stora datamängder. Det vanligaste misstaget är att börja i tekniken. Bra personalisering börjar i frågan om vilken skillnad den ska göra för kunden, och om det finns tillräckligt med innehåll att variera.",
+      "exempel": "Spotify Wrapped sammanställer varje år användarens lyssnande till en personlig berättelse som många väljer att dela. Personaliseringen ger relevans och blir samtidigt marknadsföring, eftersom användarna sprider varumärket själva.",
+      "exempel_typ": "verkligt",
+      "karnan": "Personalisering börjar i vad den ska göra för kunden.",
+      "termer": [
+        "personalization",
+        "rule-based",
+        "algorithmic",
+        "recommendation engine"
+      ],
+      "las_vidare": [
+        "personalization strategy",
+        "Spotify Wrapped marketing case"
       ],
       "period": "Månad 4",
       "granskad": "2026-10-17"
@@ -2606,30 +2606,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-121",
-      "datum": "2027-03-03",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Designsystem",
-      "brodtext": "Ett designsystem är en samling återanvändbara komponenter, regler och riktlinjer för att bygga digitala produkter: knappar, formulär, färger, typografi, ikoner och mönster för hur de ska användas. Det finns både i design och i kod, så att det som designas också är det som byggs. Fördelarna är snabbare utveckling, mer konsekvent upplevelse och enklare underhåll. Ett designsystem är också ett sätt att förvalta varumärket digitalt. Men det kräver ägarskap och löpande förvaltning, annars växer verkligheten snabbt ifrån det och det slutar användas.",
-      "exempel": "En organisation med tre webbplatser och två appar har fyrtio olika varianter av knappar. När den inför ett gemensamt designsystem går det snabbare att bygga nya funktioner, och kunderna känner igen sig mellan kanalerna.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Ett designsystem gör varumärket konsekvent och utvecklingen snabbare, om någon äger det.",
-      "termer": [
-        "design system",
-        "component library",
-        "design tokens",
-        "governance"
-      ],
-      "las_vidare": [
-        "Brad Frost Atomic Design",
-        "design system governance"
-      ],
-      "period": "Månad 5",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-122",
-      "datum": "2027-03-04",
+      "datum": "2027-03-03",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Kundresekartan",
       "brodtext": "En kundresekarta visualiserar en kunds upplevelse av en tjänst, från det första behovet till tiden efter köpet. Den beskriver i ordning vad kunden gör, tänker och känner i varje steg, vilka kontaktpunkter som används och var problemen och möjligheterna finns. Kartan är som mest värdefull när den bygger på verklig data och research, och när den används för att prioritera förbättringar. Den är minst värdefull när den görs i en workshop utifrån antaganden och sedan hamnar på en vägg. Kundresan kompletteras ofta med en service blueprint, som visar vad som krävs internt.",
@@ -2645,6 +2623,28 @@
       "las_vidare": [
         "Nielsen Norman Group journey mapping",
         "customer journey mapping research"
+      ],
+      "period": "Månad 5",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-121",
+      "datum": "2027-03-04",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Designsystem",
+      "brodtext": "Ett designsystem är en samling återanvändbara komponenter, regler och riktlinjer för att bygga digitala produkter: knappar, formulär, färger, typografi, ikoner och mönster för hur de ska användas. Det finns både i design och i kod, så att det som designas också är det som byggs. Fördelarna är snabbare utveckling, mer konsekvent upplevelse och enklare underhåll. Ett designsystem är också ett sätt att förvalta varumärket digitalt. Men det kräver ägarskap och löpande förvaltning, annars växer verkligheten snabbt ifrån det och det slutar användas.",
+      "exempel": "En organisation med tre webbplatser och två appar har fyrtio olika varianter av knappar. När den inför ett gemensamt designsystem går det snabbare att bygga nya funktioner, och kunderna känner igen sig mellan kanalerna.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Ett designsystem gör varumärket konsekvent och utvecklingen snabbare, om någon äger det.",
+      "termer": [
+        "design system",
+        "component library",
+        "design tokens",
+        "governance"
+      ],
+      "las_vidare": [
+        "Brad Frost Atomic Design",
+        "design system governance"
       ],
       "period": "Månad 5",
       "granskad": "2026-10-17"
@@ -2908,30 +2908,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-135",
-      "datum": "2027-03-17",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Customer data platform",
-      "brodtext": "En customer data platform, CDP, är ett system som samlar data om kunder från olika källor, som webbplats, app, kassasystem, kundtjänst och e-post, till en sammanhållen profil per kund. Profilerna kan sedan användas för analys, segmentering och personaliserad kommunikation i olika kanaler. En CDP kan lösa ett vanligt problem: att kunddata ligger utspridd i system som inte pratar med varandra. Men verktyget löser inte allt. Utan tydliga användningsfall, god datakvalitet, rättslig grund och någon som äger arbetet blir en CDP ofta en dyr investering som används lite.",
-      "exempel": "En hemelektronikkedja inför en CDP och upptäcker att samma kund finns i fyra olika system med olika e-postadresser. Först när profilerna slås ihop kan kedjan se att många kunder handlar både i butik och online, och anpassa sina erbjudanden därefter.",
-      "exempel_typ": "illustrativt",
-      "karnan": "En CDP samlar kunddatan, men värdet uppstår först när den används.",
-      "termer": [
-        "customer data platform",
-        "single customer view",
-        "identity resolution",
-        "activation"
-      ],
-      "las_vidare": [
-        "customer data platform explained",
-        "CDP use cases"
-      ],
-      "period": "Månad 5",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-136",
-      "datum": "2027-03-18",
+      "datum": "2027-03-17",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "De första dagarna avgör",
       "brodtext": "Hur en kund kommer igång med en tjänst har stor betydelse för om hen stannar. Många tjänster tappar en stor del av sina nya kunder tidigt, ofta innan kunden har upplevt det värde som fick hen att börja. Onboarding handlar därför om att så snabbt som möjligt leda kunden till det första ögonblick då tjänsten gör nytta, ibland kallat aha-ögonblicket. Det kräver att man vet vad det ögonblicket är, tar bort onödiga steg före det och följer upp de kunder som fastnar. Välkomstmejl utan riktning räcker sällan.",
@@ -2947,6 +2925,28 @@
       "las_vidare": [
         "customer onboarding time to value",
         "aha moment activation metric"
+      ],
+      "period": "Månad 5",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-135",
+      "datum": "2027-03-18",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Customer data platform",
+      "brodtext": "En customer data platform, CDP, är ett system som samlar data om kunder från olika källor, som webbplats, app, kassasystem, kundtjänst och e-post, till en sammanhållen profil per kund. Profilerna kan sedan användas för analys, segmentering och personaliserad kommunikation i olika kanaler. En CDP kan lösa ett vanligt problem: att kunddata ligger utspridd i system som inte pratar med varandra. Men verktyget löser inte allt. Utan tydliga användningsfall, god datakvalitet, rättslig grund och någon som äger arbetet blir en CDP ofta en dyr investering som används lite.",
+      "exempel": "En hemelektronikkedja inför en CDP och upptäcker att samma kund finns i fyra olika system med olika e-postadresser. Först när profilerna slås ihop kan kedjan se att många kunder handlar både i butik och online, och anpassa sina erbjudanden därefter.",
+      "exempel_typ": "illustrativt",
+      "karnan": "En CDP samlar kunddatan, men värdet uppstår först när den används.",
+      "termer": [
+        "customer data platform",
+        "single customer view",
+        "identity resolution",
+        "activation"
+      ],
+      "las_vidare": [
+        "customer data platform explained",
+        "CDP use cases"
       ],
       "period": "Månad 5",
       "granskad": "2026-10-17"
@@ -3018,30 +3018,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-140",
-      "datum": "2027-03-22",
-      "omrade": "Varumärke och tillväxt",
-      "rubrik": "Att skapa en ny kategori",
-      "brodtext": "Kategoridesign innebär att ett företag lanserar en produkt och samtidigt definierar en ny kategori och tar ledningen i den. Idén beskrivs bland annat i boken Play Bigger av Al Ramadan och kollegor, som menar att den som definierar problemet och kategorins namn ofta tar den största delen av värdet. Strategin passar när ett erbjudande löser ett problem på ett nytt sätt, och kräver att man kan förklara problemet tydligare än lösningen. Risken är att kategorin aldrig slår igenom, eller att en större aktör tar över den när den väl har etablerats.",
-      "exempel": "Red Bull lanserades i Österrike 1987, när energidrycker knappt fanns som begrepp i Europa. Företaget lade stor kraft på att etablera vad en energidryck var och när den passade, och blev under lång tid synonymt med kategorin.",
-      "exempel_typ": "verkligt",
-      "karnan": "Den som definierar problemet och kategorin tar ofta det mesta av värdet.",
-      "termer": [
-        "category design",
-        "category creation",
-        "category king",
-        "problem framing"
-      ],
-      "las_vidare": [
-        "Play Bigger category design",
-        "category creation strategy"
-      ],
-      "period": "Månad 5",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-141",
-      "datum": "2027-03-23",
+      "datum": "2027-03-22",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Det enkla känns sant",
       "brodtext": "Kognitiv flyt, processing fluency, beskriver hur lätt det är för hjärnan att ta in information. Det som är lätt att läsa, uttala eller förstå upplevs ofta som mer sant, mer bekant och mer tilltalande. Adam Alter och Daniel Oppenheimer visade 2006 att aktier med namn som var lätta att uttala i genomsnitt utvecklades bättre under de första dagarna efter börsintroduktionen än aktier med svåruttalade namn. För kommunikation och design innebär det att tydlig typografi, enkla ord och välbekanta mönster påverkar trovärdighet och preferens.",
@@ -3057,6 +3035,28 @@
       "las_vidare": [
         "Alter Oppenheimer fluency stock names 2006",
         "Kahneman cognitive ease"
+      ],
+      "period": "Månad 5",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-140",
+      "datum": "2027-03-23",
+      "omrade": "Varumärke och tillväxt",
+      "rubrik": "Att skapa en ny kategori",
+      "brodtext": "Kategoridesign innebär att ett företag lanserar en produkt och samtidigt definierar en ny kategori och tar ledningen i den. Idén beskrivs bland annat i boken Play Bigger av Al Ramadan och kollegor, som menar att den som definierar problemet och kategorins namn ofta tar den största delen av värdet. Strategin passar när ett erbjudande löser ett problem på ett nytt sätt, och kräver att man kan förklara problemet tydligare än lösningen. Risken är att kategorin aldrig slår igenom, eller att en större aktör tar över den när den väl har etablerats.",
+      "exempel": "Red Bull lanserades i Österrike 1987, när energidrycker knappt fanns som begrepp i Europa. Företaget lade stor kraft på att etablera vad en energidryck var och när den passade, och blev under lång tid synonymt med kategorin.",
+      "exempel_typ": "verkligt",
+      "karnan": "Den som definierar problemet och kategorin tar ofta det mesta av värdet.",
+      "termer": [
+        "category design",
+        "category creation",
+        "category king",
+        "problem framing"
+      ],
+      "las_vidare": [
+        "Play Bigger category design",
+        "category creation strategy"
       ],
       "period": "Månad 5",
       "granskad": "2026-10-17"
@@ -3084,30 +3084,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-143",
-      "datum": "2027-03-25",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Sökrutan som insiktskälla",
-      "brodtext": "Det besökare skriver i sökrutan på en webbplats är en av de mest direkta källorna till kundinsikt. Till skillnad från klick och sidvisningar uttrycker sökningarna, med kundens egna ord, vad hen letar efter. Analysen kan visa vad som är svårt att hitta i navigationen, vilka ord kunderna använder i stället för organisationens egna begrepp och vilka behov som inte besvaras alls. Sökningar som inte ger några träffar är särskilt värdefulla. Trots det är den interna sökningen ofta både eftersatt och sällan analyserad.",
-      "exempel": "En kommun ser att många söker på ”soptunna” på sin webbplats, medan informationen ligger under rubriken ”avfallshantering”. När sidan byter rubrik och sökordet läggs till minskar antalet samtal till växeln om sophämtning.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Sökrutan visar med kundens egna ord vad hen inte hittar.",
-      "termer": [
-        "site search",
-        "search analytics",
-        "zero results",
-        "information architecture"
-      ],
-      "las_vidare": [
-        "site search analytics",
-        "Nielsen Norman Group site search"
-      ],
-      "period": "Månad 5",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-144",
-      "datum": "2027-03-26",
+      "datum": "2027-03-25",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Stäng återkopplingsslingan",
       "brodtext": "Många organisationer samlar in kundsynpunkter genom enkäter och betyg men gör lite med dem. Ett closed loop-arbetssätt innebär att varje återkoppling, särskilt den negativa, leder till åtgärder på två nivåer. I den inre slingan kontaktas kunden, ofta inom kort tid, för att förstå och lösa problemet. I den yttre slingan samlas mönster och tas vidare till förbättringar av tjänsten. När kunderna dessutom får veta vad som ändrats ökar viljan att svara igen. Utan uppföljning lär sig kunderna att deras synpunkter inte spelar någon roll.",
@@ -3123,6 +3101,28 @@
       "las_vidare": [
         "closed loop feedback inner outer loop",
         "voice of the customer program"
+      ],
+      "period": "Månad 5",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-143",
+      "datum": "2027-03-26",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Sökrutan som insiktskälla",
+      "brodtext": "Det besökare skriver i sökrutan på en webbplats är en av de mest direkta källorna till kundinsikt. Till skillnad från klick och sidvisningar uttrycker sökningarna, med kundens egna ord, vad hen letar efter. Analysen kan visa vad som är svårt att hitta i navigationen, vilka ord kunderna använder i stället för organisationens egna begrepp och vilka behov som inte besvaras alls. Sökningar som inte ger några träffar är särskilt värdefulla. Trots det är den interna sökningen ofta både eftersatt och sällan analyserad.",
+      "exempel": "En kommun ser att många söker på ”soptunna” på sin webbplats, medan informationen ligger under rubriken ”avfallshantering”. När sidan byter rubrik och sökordet läggs till minskar antalet samtal till växeln om sophämtning.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Sökrutan visar med kundens egna ord vad hen inte hittar.",
+      "termer": [
+        "site search",
+        "search analytics",
+        "zero results",
+        "information architecture"
+      ],
+      "las_vidare": [
+        "site search analytics",
+        "Nielsen Norman Group site search"
       ],
       "period": "Månad 5",
       "granskad": "2026-10-17"
@@ -3389,30 +3389,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-157",
-      "datum": "2027-04-08",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Informationsarkitektur och kortsortering",
-      "brodtext": "Informationsarkitektur handlar om hur innehåll organiseras, struktureras och benämns så att användare hittar det de letar efter. En vanlig fälla är att bygga strukturen efter organisationens egen indelning, som avdelningar och interna begrepp, i stället för efter hur kunderna tänker. Kortsortering är en metod för att undvika det. Användare får sortera kort med innehåll i grupper som känns logiska för dem och ge grupperna namn. Ett kompletterande trädtest låter användare försöka hitta saker i en föreslagen struktur innan den byggs.",
-      "exempel": "En högskola har sin webbplats organiserad efter fakulteter. När blivande studenter får sortera innehållet grupperar de det i stället efter frågor som ”vad kan jag plugga”, ”hur söker jag” och ”hur är det att bo här”. Den nya strukturen gör att fler hittar rätt utbildning.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Organisera innehållet efter hur kunderna tänker.",
-      "termer": [
-        "information architecture",
-        "card sorting",
-        "tree testing",
-        "navigation"
-      ],
-      "las_vidare": [
-        "Nielsen Norman Group card sorting",
-        "tree testing information architecture"
-      ],
-      "period": "Månad 6",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-158",
-      "datum": "2027-04-09",
+      "datum": "2027-04-08",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Sömlösa kanalbyten",
       "brodtext": "Kunder rör sig mellan kanaler: de börjar på webben, fortsätter i appen, ringer kundtjänst och avslutar i butik. Problemen uppstår ofta i övergångarna, när informationen inte följer med och kunden får börja om. Ett omnikanalt arbetssätt innebär att kunden möter samma information, historik och erbjudanden oavsett var hen befinner sig. Det kräver gemensamma system, men också gemensamma mål, så att kanalerna inte konkurrerar om samma kund. Ett enkelt test är att följa en verklig kund genom ett ärende som spänner över flera kanaler och se var det skaver.",
@@ -3428,6 +3406,28 @@
       "las_vidare": [
         "omnichannel customer experience",
         "channel switching friction"
+      ],
+      "period": "Månad 6",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-157",
+      "datum": "2027-04-09",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Informationsarkitektur och kortsortering",
+      "brodtext": "Informationsarkitektur handlar om hur innehåll organiseras, struktureras och benämns så att användare hittar det de letar efter. En vanlig fälla är att bygga strukturen efter organisationens egen indelning, som avdelningar och interna begrepp, i stället för efter hur kunderna tänker. Kortsortering är en metod för att undvika det. Användare får sortera kort med innehåll i grupper som känns logiska för dem och ge grupperna namn. Ett kompletterande trädtest låter användare försöka hitta saker i en föreslagen struktur innan den byggs.",
+      "exempel": "En högskola har sin webbplats organiserad efter fakulteter. När blivande studenter får sortera innehållet grupperar de det i stället efter frågor som ”vad kan jag plugga”, ”hur söker jag” och ”hur är det att bo här”. Den nya strukturen gör att fler hittar rätt utbildning.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Organisera innehållet efter hur kunderna tänker.",
+      "termer": [
+        "information architecture",
+        "card sorting",
+        "tree testing",
+        "navigation"
+      ],
+      "las_vidare": [
+        "Nielsen Norman Group card sorting",
+        "tree testing information architecture"
       ],
       "period": "Månad 6",
       "granskad": "2026-10-17"
@@ -3695,30 +3695,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2026-q4-186",
-      "datum": "2027-04-22",
-      "omrade": "Digitalt, data och AI",
-      "rubrik": "Strukturerad data",
-      "brodtext": "Strukturerad data är information på en webbplats som är märkt så att maskiner förstår vad den betyder. Den vanligaste standarden är schema.org, som de stora sökmotorerna tog fram tillsammans 2011. Med den kan en sida ange att en viss text är ett pris, öppettider, ett recept eller ett omdöme. Det gör innehållet lättare att visa i sökresultat och lättare för AI-tjänster och agenter att tolka korrekt. När allt mer information hämtas och sammanfattas av maskiner blir strukturerad data en del av hur ett varumärke syns och beskrivs.",
-      "exempel": "En restaurangkedja märker upp öppettider, adresser, menyer och prisnivå på varje restaurangsida. När någon frågar en AI-assistent var man kan äta brunch i närheten på söndag kan assistenten läsa uppgifterna korrekt, i stället för att gissa utifrån gamla omdömen.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Märk upp innehållet så att maskiner förstår det. De är allt oftare de som läser först.",
-      "termer": [
-        "structured data",
-        "schema.org",
-        "rich results",
-        "machine-readable"
-      ],
-      "las_vidare": [
-        "schema.org structured data",
-        "Google structured data guidelines"
-      ],
-      "period": "Månad 6",
-      "granskad": "2026-10-17"
-    },
-    {
       "id": "2026-q4-172",
-      "datum": "2027-04-23",
+      "datum": "2027-04-22",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Prototypa tjänsten",
       "brodtext": "Fysiska och digitala produkter testas ofta med prototyper, men tjänster lanseras inte sällan utan att ha prövats i verkligheten. Tjänstedesigners använder därför metoder för att prototypa upplevelser: rollspel där medarbetare spelar kund och personal, enkla uppställningar av en miljö eller ett tillfälligt pilottest på en enda plats. Metoderna gör det möjligt att upptäcka problem i flödet, i bemötandet och i samspelet mellan människor och system innan stora investeringar görs. En tjänst som har spelats igenom en eftermiddag avslöjar ofta mer än en lång kravspecifikation.",
@@ -3734,6 +3712,28 @@
       "las_vidare": [
         "service design prototyping methods",
         "This Is Service Design Doing prototyping"
+      ],
+      "period": "Månad 6",
+      "granskad": "2026-10-17"
+    },
+    {
+      "id": "2026-q4-186",
+      "datum": "2027-04-23",
+      "omrade": "Digitalt, data och AI",
+      "rubrik": "Strukturerad data",
+      "brodtext": "Strukturerad data är information på en webbplats som är märkt så att maskiner förstår vad den betyder. Den vanligaste standarden är schema.org, som de stora sökmotorerna tog fram tillsammans 2011. Med den kan en sida ange att en viss text är ett pris, öppettider, ett recept eller ett omdöme. Det gör innehållet lättare att visa i sökresultat och lättare för AI-tjänster och agenter att tolka korrekt. När allt mer information hämtas och sammanfattas av maskiner blir strukturerad data en del av hur ett varumärke syns och beskrivs.",
+      "exempel": "En restaurangkedja märker upp öppettider, adresser, menyer och prisnivå på varje restaurangsida. När någon frågar en AI-assistent var man kan äta brunch i närheten på söndag kan assistenten läsa uppgifterna korrekt, i stället för att gissa utifrån gamla omdömen.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Märk upp innehållet så att maskiner förstår det. De är allt oftare de som läser först.",
+      "termer": [
+        "structured data",
+        "schema.org",
+        "rich results",
+        "machine-readable"
+      ],
+      "las_vidare": [
+        "schema.org structured data",
+        "Google structured data guidelines"
       ],
       "period": "Månad 6",
       "granskad": "2026-10-17"
@@ -3956,30 +3956,8 @@
       "granskad": "2026-10-17"
     },
     {
-      "id": "2027-q2-001",
-      "datum": "2027-05-04",
-      "omrade": "Kundinsikt och kundupplevelse",
-      "rubrik": "IKEA-effekten",
-      "brodtext": "IKEA-effekten innebär att vi värderar det vi själva har varit med och skapat högre än likadana saker som någon annan har gjort. Michael Norton, Daniel Mochon och Dan Ariely visade 2012 att personer som själva hade monterat en enkel förvaringslåda från IKEA var beredda att betala mer för den än för en färdigmonterad. Effekten uppstår bara när ansträngningen leder till ett färdigt resultat. Den som ger upp halvvägs värderar inte sitt verk högre. För strateger finns en dubbel lärdom: att låta kunder och kollegor bidra skapar engagemang, men samma mekanism gör att vi överskattar våra egna idéer.",
-      "exempel": "En byrå låter kundens ledningsgrupp formulera varumärkets värdeord själva i en workshop, i stället för att presentera färdiga förslag. Orden blir nästan desamma som i byråns utkast, men nu försvarar ledningen dem internt som sina egna.",
-      "exempel_typ": "illustrativt",
-      "karnan": "Det vi har byggt själva tycker vi mer om, även när det inte är bättre.",
-      "termer": [
-        "IKEA effect",
-        "effort justification",
-        "co-creation",
-        "not invented here"
-      ],
-      "las_vidare": [
-        "Norton Mochon Ariely The IKEA effect 2012",
-        "IKEA effect co-creation"
-      ],
-      "period": "Månad 7",
-      "granskad": "2026-11-05"
-    },
-    {
       "id": "2027-q2-002",
-      "datum": "2027-05-05",
+      "datum": "2027-05-04",
       "omrade": "Innovation och arbetsmetoder",
       "rubrik": "Parkinsons lag",
       "brodtext": "Parkinsons lag säger att arbete växer så att det fyller den tid som finns till förfogande. Formuleringen kommer från den brittiske historikern C. Northcote Parkinson, som 1955 skrev en satirisk essä i The Economist om hur förvaltningar växer oavsett hur mycket arbete som faktiskt finns. Iakttagelsen har blivit ett allmänt verktyg för planering: en uppgift med generös deadline tar sällan mindre tid än den har fått. Korta och tydliga tidsramar tvingar fram prioriteringar och beslut. Samtidigt finns en gräns, för med för lite tid sjunker kvaliteten och viktiga steg hoppas över.",
@@ -3995,6 +3973,28 @@
       "las_vidare": [
         "C. Northcote Parkinson The Economist 1955",
         "timeboxing"
+      ],
+      "period": "Månad 7",
+      "granskad": "2026-11-05"
+    },
+    {
+      "id": "2027-q2-001",
+      "datum": "2027-05-05",
+      "omrade": "Kundinsikt och kundupplevelse",
+      "rubrik": "IKEA-effekten",
+      "brodtext": "IKEA-effekten innebär att vi värderar det vi själva har varit med och skapat högre än likadana saker som någon annan har gjort. Michael Norton, Daniel Mochon och Dan Ariely visade 2012 att personer som själva hade monterat en enkel förvaringslåda från IKEA var beredda att betala mer för den än för en färdigmonterad. Effekten uppstår bara när ansträngningen leder till ett färdigt resultat. Den som ger upp halvvägs värderar inte sitt verk högre. För strateger finns en dubbel lärdom: att låta kunder och kollegor bidra skapar engagemang, men samma mekanism gör att vi överskattar våra egna idéer.",
+      "exempel": "En byrå låter kundens ledningsgrupp formulera varumärkets värdeord själva i en workshop, i stället för att presentera färdiga förslag. Orden blir nästan desamma som i byråns utkast, men nu försvarar ledningen dem internt som sina egna.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Det vi har byggt själva tycker vi mer om, även när det inte är bättre.",
+      "termer": [
+        "IKEA effect",
+        "effort justification",
+        "co-creation",
+        "not invented here"
+      ],
+      "las_vidare": [
+        "Norton Mochon Ariely The IKEA effect 2012",
+        "IKEA effect co-creation"
       ],
       "period": "Månad 7",
       "granskad": "2026-11-05"
