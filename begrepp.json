@@ -1,7 +1,7 @@
 {
   "app": "Dagens begrepp",
   "schema_version": 4,
-  "innehallsversion": "2026-11-07",
+  "innehallsversion": "2026-11-09",
   "begrepp": [
     {
       "id": "2026-q4-001",
@@ -3998,6 +3998,50 @@
       ],
       "period": "Månad 7",
       "granskad": "2026-11-05"
+    },
+    {
+      "id": "2027-q2-003",
+      "datum": "2027-05-06",
+      "omrade": "Strategi och affär",
+      "rubrik": "Byteskostnader",
+      "brodtext": "Byteskostnader är allt som gör det dyrt, krångligt eller riskabelt för en kund att byta leverantör, även när alternativet är bättre eller billigare. Carl Shapiro och Hal Varian beskrev i Information Rules (1999) hur företag bygger inlåsning genom avtal, utbildning, data, integrationer och lojalitetsprogram. Kostnaden kan vara ekonomisk, som en uppsägningsavgift, men oftare praktisk eller känslomässig: att lära om, flytta historik eller ta risken att det nya inte fungerar. Byteskostnader skyddar intäkter, men de håller också kvar kunder som inte längre är nöjda. Den som bara litar på inlåsning tappar snabbt när en konkurrent sänker tröskeln för att byta.",
+      "exempel": "En redovisningstjänst för småföretag låter nya kunder flytta all historik från konkurrenten med ett klick och sköter uppsägningen åt dem. Priset är detsamma som hos konkurrenten, men det som tidigare fick kunderna att stanna kvar hos sin gamla leverantör är borta.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Kunder stannar ofta för att det är krångligt att byta, inte för att de är nöjda.",
+      "termer": [
+        "switching costs",
+        "lock-in",
+        "installed base",
+        "customer retention"
+      ],
+      "las_vidare": [
+        "Shapiro Varian Information Rules lock-in",
+        "switching costs customer retention"
+      ],
+      "period": "Månad 7",
+      "granskad": "2026-11-09"
+    },
+    {
+      "id": "2027-q2-004",
+      "datum": "2027-05-07",
+      "omrade": "Regelverk och ansvar",
+      "rubrik": "Vilseledande design",
+      "brodtext": "Vilseledande design, ofta kallat dark patterns, är gränssnitt som styr människor mot val de annars inte hade gjort. Designern Harry Brignull myntade begreppet 2010. Typiska exempel är förvalda tillval i kassan, nedräkningar som inte stämmer, uppsägningar som göms och formuleringar som får ett nej att kännas skamligt. Sådan design kan vara otillbörlig marknadsföring enligt marknadsföringslagen, och förordningen om digitala tjänster (DSA) förbjuder onlineplattformar att utforma gränssnitt som vilseleder eller manipulerar användarna. När EU-kommissionen och konsumentmyndigheterna granskade knappt 400 e-handelssajter 2022 hittade de vilseledande design på drygt en tredjedel. Risken är inte bara juridisk: kunder som känner sig lurade kommer sällan tillbaka.",
+      "exempel": "En streamingtjänst låter kunden teckna abonnemang med två tryck, men uppsägningen kräver fem steg, ett samtal till kundtjänst och ett erbjudande som måste avböjas två gånger. När tjänsten gör uppsägningen lika enkel som köpet minskar klagomålen, och fler tidigare kunder kommer tillbaka.",
+      "exempel_typ": "illustrativt",
+      "karnan": "Design som lurar kunden att säga ja kostar mer i förtroende än den ger i försäljning.",
+      "termer": [
+        "dark patterns",
+        "deceptive design",
+        "Digital Services Act",
+        "unfair commercial practices"
+      ],
+      "las_vidare": [
+        "Harry Brignull Deceptive Patterns",
+        "EU sweep dark patterns 2022"
+      ],
+      "period": "Månad 7",
+      "granskad": "2026-11-09"
     }
   ]
 }
