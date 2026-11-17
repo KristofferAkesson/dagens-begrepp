@@ -1,7 +1,7 @@
 {
   "app": "Dagens begrepp",
   "schema_version": 4,
-  "innehallsversion": "2026-11-09",
+  "innehallsversion": "2026-11-14.9",
   "begrepp": [
     {
       "id": "2026-q4-001",
@@ -280,7 +280,7 @@
         "IPA Media in Focus"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-014",
@@ -302,7 +302,7 @@
         "Nielsen Norman Group service blueprint"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-015",
@@ -310,7 +310,7 @@
       "omrade": "Digitalt, data och AI",
       "rubrik": "Marketing mix modelling",
       "brodtext": "Marketing mix modelling (MMM) är en statistisk metod som uppskattar hur olika faktorer påverkar försäljningen över tid. Modellen analyserar historiska data om försäljning, mediainvesteringar per kanal, priser, säsong, konkurrens och omvärld. Till skillnad från attributionsmodeller kräver MMM ingen spårning av enskilda användare, vilket gör metoden robust i en värld med färre cookies. Den fångar också effekter av kanaler som är svåra att spåra digitalt, som tv och utomhusreklam. Begränsningen är att den behöver flera års data och ger svar på en övergripande nivå. Därför kombineras den ofta med experiment som kalibrerar resultaten.",
-      "exempel": "Ett dagligvaruvarumärke upptäcker via MMM att tv-reklamen har en långsam men varaktig effekt som attributionsmodellen helt missade, och att en del av den digitala budgeten gav nästan ingen ökning. Det leder till en ny fördelning mellan kanalerna.",
+      "exempel": "Ett dagligvaruvarumärke ser i sin MMM att tv-reklamen ger en långsam men varaktig effekt på försäljningen, något som attributionsmodellen aldrig fångade upp. Analysen visar också att en del av de digitala insatserna knappt bidrog till någon extra försäljning. Därför flyttar varumärket pengar mellan kanalerna.",
       "exempel_typ": "illustrativt",
       "karnan": "MMM ser helheten utan att spåra individer, men kräver flera års data.",
       "termer": [
@@ -324,7 +324,7 @@
         "Meta Robyn MMM"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-017",
@@ -346,7 +346,7 @@
         "Kevin Lane Keller positioning"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-013",
@@ -368,14 +368,14 @@
         "AI agents marketing implications"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-018",
       "datum": "2026-11-20",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Standardvalets kraft",
-      "brodtext": "Människor tenderar att behålla det alternativ som redan är förvalt, av bekvämlighet, av osäkerhet eller för att standardvalet uppfattas som en rekommendation. Eric Johnson och Daniel Goldstein visade 2003 att andelen organdonatorer var långt högre i länder där man automatiskt var donator och fick välja bort det, ofta över 85 procent, än i länder där man aktivt behövde välja till det, där den oftast låg under 30 procent. I tjänster och digitala produkter finns standardval överallt: förvalda inställningar, abonnemangsnivåer och kryssrutor. Varje förval styr vad kunderna gör och bör därför väljas medvetet.",
+      "brodtext": "Människor tenderar att behålla det alternativ som redan är förvalt, av bekvämlighet, av osäkerhet eller för att standardvalet uppfattas som en rekommendation. Eric Johnson och Daniel Goldstein visade 2003 att andelen som var registrerade som organdonatorer var långt högre i länder där man automatiskt var donator och fick välja bort det, ofta över 85 procent, än i länder där man aktivt behövde välja till det, där den oftast låg under 30 procent. I tjänster och digitala produkter finns standardval överallt: förvalda inställningar, abonnemangsnivåer och kryssrutor. Varje förval styr vad kunderna gör och bör därför väljas medvetet.",
       "exempel": "Ett pensionsbolag som gör en välbalanserad fond till förvalt alternativ, i stället för en lågavkastande räntefond, kan förbättra pensionen för tusentals kunder som aldrig gör ett aktivt val.",
       "exempel_typ": "illustrativt",
       "karnan": "Det förvalda alternativet blir ofta det valda, så designa det med omsorg.",
@@ -390,7 +390,7 @@
         "Johnson Goldstein Do Defaults Save Lives"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-019",
@@ -412,7 +412,7 @@
         "COPE create once publish everywhere"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-021",
@@ -434,7 +434,7 @@
         "NPS criticism"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-020",
@@ -456,14 +456,14 @@
         "AI content governance"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-022",
       "datum": "2026-11-24",
       "omrade": "Strategi och affär",
       "rubrik": "Playing to Win",
-      "brodtext": "Playing to Win, av A.G. Lafley och Roger Martin, beskriver strategi som en kaskad av fem sammanhängande val. Vad är vår vinnande ambition? Var ska vi spela, alltså på vilka marknader, för vilka kunder och i vilka kanaler? Hur ska vi vinna där? Vilka förmågor krävs? Och vilka ledningssystem behövs för att stödja det? Kärnan är att strategi handlar om att välja, och att valen måste hänga ihop. De två mittersta frågorna, where to play och how to win, är modellens hjärta. Ett vanligt misstag är att besvara dem var för sig i stället för som en helhet.",
+      "brodtext": "Playing to Win, av A.G. Lafley och Roger Martin, beskriver strategi som en kaskad av fem sammanhängande val. Vad är vår vinnande ambition? Var ska vi spela, alltså på vilka marknader, för vilka kunder och i vilka kanaler? Hur ska vi vinna där? Vilka förmågor krävs? Och vilka ledningssystem behövs för att stödja det? Kärnan är att strategi handlar om att välja, och att valen måste hänga ihop. De två centrala frågorna, where to play och how to win, är modellens hjärta. Ett vanligt misstag är att besvara dem var för sig i stället för som en helhet.",
       "exempel": "En regional livsmedelskedja väljer att spela i mindre orter där de stora kedjorna har svag närvaro, och att vinna genom lokalt sortiment och personlig service. Det kräver förmåga att samarbeta med lokala producenter och styrsystem som ger butikscheferna mandat att välja sortiment.",
       "exempel_typ": "illustrativt",
       "karnan": "Strategi är en uppsättning val som förstärker varandra.",
@@ -477,7 +477,7 @@
         "Roger Martin strategic choice cascade"
       ],
       "period": "Månad 1",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-023",
@@ -498,7 +498,7 @@
         "SCQA framework"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-024",
@@ -506,7 +506,7 @@
       "omrade": "Varumärke och tillväxt",
       "rubrik": "Vision, mission och purpose",
       "brodtext": "Vision, mission och purpose används ofta om vartannat, men beskriver olika saker. Vision är den framtid organisationen strävar mot. Mission är vad den gör för att komma dit. Purpose är varför den finns, utöver att tjäna pengar. Ett bra purpose fungerar som ett filter för beslut och ger riktning åt både varumärke och verksamhet. Kritiken mot purpose-trenden är att formuleringarna ofta blir så breda att de inte styr något, eller att de lovar mer än verksamheten levererar. Testet är enkelt: har formuleringen någon gång fått företaget att säga nej till något?",
-      "exempel": "IKEA:s vision, att skapa en bättre vardag för de många människorna, har styrt allt från platta paket och självbetjäning till prissättning och design. Den är konkret nog att förklara varför vissa idéer passar IKEA och andra inte gör det.",
+      "exempel": "IKEA:s vision, att skapa en bättre vardag för de många människorna, har präglat sortimentet, prissättningen och designen. Den är konkret nog att förklara varför vissa idéer passar IKEA och andra inte gör det.",
       "exempel_typ": "verkligt",
       "karnan": "Ett purpose som aldrig fått företaget att säga nej styr ingenting.",
       "termer": [
@@ -519,7 +519,7 @@
         "IKEA vision a better everyday life"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-025",
@@ -541,7 +541,7 @@
         "Design Council double diamond"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-026",
@@ -563,7 +563,7 @@
         "Blair Enns Pricing Creativity"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-027",
@@ -573,7 +573,7 @@
       "brodtext": "En kreativ brief översätter strategi till en uppgift för det kreativa teamet. En bra brief är kort och skarp. Kärnan är ofta en single-minded proposition: det enda budskap som ska fastna hos målgruppen. Därtill kommer en tydlig bild av målgruppen och en insikt om dem, vad kommunikationen ska åstadkomma, varför budskapet är trovärdigt och praktiska ramar. Det vanligaste felet är att försöka säga allt. En brief med fem budskap ger kommunikation som inte säger något. Briefen är också ett strategiskt test: går den inte att skriva enkelt är strategin troligen inte klar.",
       "exempel": "En brief för ett gym kan frestas att lyfta pris, öppettider, utrustning och gruppträning på en gång. En skarpare brief väljer en enda sak, till exempel att gymmet ligger på vägen hem, och låter det kreativa arbetet bygga allt kring den.",
       "exempel_typ": "illustrativt",
-      "karnan": "En brief som försöker säga allt ger kommunikation som inte säger något.",
+      "karnan": "Välj ett enda budskap och bygg allt kring det.",
       "termer": [
         "creative brief",
         "single-minded proposition",
@@ -585,14 +585,14 @@
         "IPA creative brief best practice"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-028",
       "datum": "2026-11-30",
       "omrade": "Regelverk och ansvar",
       "rubrik": "Miljöpåståenden",
-      "brodtext": "Miljöpåståenden i marknadsföring granskas allt hårdare. Enligt marknadsföringslagen ska påståenden vara sanna och kunna styrkas, och svenska domstolar har länge ställt höga krav på allmänna miljöpåståenden. Sedan 27 september 2026 tillämpas dessutom EU:s direktiv om att stärka konsumenternas ställning i den gröna omställningen. Det förbjuder bland annat allmänna påståenden som ”miljövänlig” eller ”klimatsmart” som inte kan styrkas, påståenden om klimatneutralitet som bygger på kompensation och hållbarhetsmärkningar som inte vilar på ett certifieringssystem eller har fastställts av myndigheter. Hållbarhetskommunikation måste därför börja i vad verksamheten gör och kan bevisa.",
+      "brodtext": "Miljöpåståenden i marknadsföring granskas allt hårdare. Enligt marknadsföringslagen ska påståenden vara sanna och kunna styrkas, och svenska domstolar har länge ställt höga krav på allmänna miljöpåståenden. Sedan 27 september 2026 ska dessutom EU:s direktiv om att stärka konsumenternas ställning i den gröna omställningen tillämpas i medlemsländerna. Sveriges lagändringar väntas först 2027, men direktivet visar vart reglerna är på väg. Det förbjuder bland annat allmänna påståenden som ”miljövänlig” eller ”klimatsmart” som inte kan styrkas, påståenden om klimatneutralitet som bygger på kompensation och hållbarhetsmärkningar som inte vilar på ett certifieringssystem eller har fastställts av myndigheter. Hållbarhetskommunikation måste därför börja i vad verksamheten gör och kan bevisa.",
       "exempel": "Ett klädmärke som vill kalla en kollektion ”hållbar” behöver kunna visa exakt vad som är bättre, till exempel andelen återvunnet material, med dokumentation. Det konkreta påståendet håller juridiskt och är dessutom mer trovärdigt för kunden.",
       "exempel_typ": "illustrativt",
       "karnan": "Ett miljöpåstående är bara så starkt som beviset bakom det.",
@@ -607,14 +607,14 @@
         "EU direktiv 2024/825 empowering consumers green transition"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-029",
       "datum": "2026-12-01",
       "omrade": "Innovation och arbetsmetoder",
       "rubrik": "Testa det mest riskfyllda antagandet",
-      "brodtext": "Varje ny idé vilar på antaganden: att kunderna har problemet, att de vill ha just den här lösningen, att de är beredda att betala och att det går att leverera. Innan man bygger något större lönar det sig att identifiera vilket antagande som är både mest osäkert och mest avgörande, och testa det så billigt som möjligt. Eric Ries kallade den minsta testbara versionen för minimum viable product, men begreppet missförstås ofta som en halvfärdig produkt. Poängen är lärande, och ibland räcker det med en landningssida, en prototyp eller några samtal.",
+      "brodtext": "Varje ny idé vilar på antaganden: att kunderna har problemet, att de vill ha just den här lösningen, att de är beredda att betala och att det går att leverera. Innan man bygger något större lönar det sig att identifiera vilket antagande som är både mest osäkert och mest avgörande, och testa det så billigt som möjligt. Eric Ries populariserade begreppet minimum viable product för den minsta testbara versionen, men det missförstås ofta som en halvfärdig produkt. Poängen är lärande, och ibland räcker det med en landningssida, en prototyp eller några samtal.",
       "exempel": "LEGO Ideas låter fans föreslå nya byggsatser. Ett förslag behöver samla 10 000 supportrar innan LEGO överväger att producera det. På så sätt testas efterfrågan innan företaget investerar i utveckling och tillverkning.",
       "exempel_typ": "verkligt",
       "karnan": "Testa först det som kan fälla idén, och gör det billigt.",
@@ -628,14 +628,14 @@
         "riskiest assumption test"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-030",
       "datum": "2026-12-02",
       "omrade": "Varumärke och tillväxt",
       "rubrik": "Double jeopardy",
-      "brodtext": "Double jeopardy är ett av marknadsföringens mest stabila empiriska mönster, beskrivet av Andrew Ehrenberg. Mindre varumärken drabbas dubbelt: de har färre köpare, och de köpare de har är dessutom något mindre lojala än de stora varumärkenas köpare. Mönstret återkommer i kategori efter kategori. Slutsatsen är obekväm för den som vill växa genom lojalitetsprogram: lojalitet följer i stor utsträckning av storlek, inte tvärtom. För att växa behöver ett varumärke främst nå fler köpare, och då ökar lojaliteten ofta av sig själv.",
+      "brodtext": "Double jeopardy är ett av marknadsföringens mest stabila empiriska mönster, först beskrivet av William McPhee på 1960-talet och sedan belagt av Andrew Ehrenberg och hans kollegor. Mindre varumärken drabbas dubbelt: de har färre köpare, och de köpare de har är dessutom något mindre lojala än de stora varumärkenas köpare. Mönstret återkommer i kategori efter kategori. Slutsatsen är obekväm för den som vill växa genom lojalitetsprogram: lojalitet följer i stor utsträckning av storlek, inte tvärtom. För att växa behöver ett varumärke främst nå fler köpare, och då ökar lojaliteten ofta av sig själv.",
       "exempel": "Ett mindre ölmärke ser att dess köpare handlar det mer sällan än marknadsledarens köpare handlar sitt märke. Det är det förväntade mönstret och betyder inte att produkten är sämre. Lösningen är att bli tillgänglig för fler, inte att belöna de få.",
       "exempel_typ": "illustrativt",
       "karnan": "Stora varumärken har både fler och något mer lojala köpare. Storleken kommer först.",
@@ -650,7 +650,7 @@
         "Byron Sharp How Brands Grow loyalty"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-031",
@@ -672,7 +672,7 @@
         "ghost deck storyline"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-032",
@@ -693,7 +693,7 @@
         "Behavioural Insights Team HMRC tax letters"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-033",
@@ -714,7 +714,7 @@
         "pre-mortem workshop"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-034",
@@ -736,7 +736,7 @@
         "net present value explained"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-035",
@@ -758,7 +758,7 @@
         "Martin Fowler technical debt quadrant"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-036",
@@ -780,7 +780,7 @@
         "Volvo Trucks Epic Split case"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-037",
@@ -802,7 +802,7 @@
         "PTS tillgänglighetslagen"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-038",
@@ -825,7 +825,7 @@
         "four big risks product discovery"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-039",
@@ -847,7 +847,7 @@
         "McKinsey three horizons"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-040",
@@ -869,7 +869,7 @@
         "RAG enterprise knowledge base"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-041",
@@ -890,7 +890,7 @@
         "Carlzon Moments of Truth"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-042",
@@ -912,7 +912,7 @@
         "North Star Metric examples"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-043",
@@ -934,7 +934,7 @@
         "activity system map"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-044",
@@ -955,7 +955,7 @@
         "survivorship bias business"
       ],
       "period": "Månad 2",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-045",
@@ -976,29 +976,29 @@
         "Duarte sparkline presentation structure"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-046",
       "datum": "2026-12-18",
       "omrade": "Varumärke och tillväxt",
-      "rubrik": "Recency planning",
-      "brodtext": "Recency planning är en princip för medieplanering som Erwin Ephron utvecklade på 1990-talet. Den bygger på att reklam främst påverkar de människor som råkar vara på väg att köpa just nu. Ett varumärke vinner därför mest på att synas kontinuerligt hos så många som möjligt, snarare än att nå samma personer många gånger under korta perioder. I praktiken innebär det bred räckvidd med låg frekvens, utspridd över tid. Principen ligger nära Ehrenberg-Bass-skolans betoning på räckvidd och utmanar idén att det krävs ett visst antal exponeringar innan reklam fungerar.",
-      "exempel": "Ett varumärke med en fast mediebudget väljer mellan tre intensiva kampanjveckor per år och låg men jämn närvaro under hela året. Recency planning talar för det senare, eftersom människor handlar i kategorin varje vecka, inte bara under kampanjveckorna.",
+      "rubrik": "Share of search",
+      "brodtext": "Share of search är ett varumärkes andel av alla sökningar i sin kategori, till exempel andelen av sökningarna på bilmärken som gäller just ditt. Les Binet visade 2020 att måttet kan ligga före marknadsandelen: i bilbranschen föregick förändringar i andelen sökningar försäljningen med ungefär ett år, i energibranschen med bara några månader. Måttet är billigt, kräver ingen enkät och går att följa nästan i realtid, vilket gör det användbart som ledande indikator. Begränsningarna är att det fungerar bäst i kategorier där köpare söker innan de köper, att varumärkesnamn som är vanliga ord ger brus och att det mäter intresse, inte orsak. Det kompletterar varumärkesmätning men ersätter den inte.",
+      "exempel": "Ett mindre mobilabonnemangsbolag ser att dess andel av sökningarna i kategorin har ökat tre kvartal i rad, medan marknadsandelen ännu står stilla. Teamet tolkar det som ett tecken på att varumärket byggs upp och håller fast vid kampanjen i stället för att dra ner när försäljningen släpar efter.",
       "exempel_typ": "illustrativt",
-      "karnan": "Köp sker hela året, så varumärket behöver synas hela året.",
+      "karnan": "Sökningarna visar ofta redan i dag vad försäljningen blir i morgon.",
       "termer": [
-        "recency planning",
-        "reach",
-        "frequency",
-        "continuity"
+        "share of search",
+        "leading indicator",
+        "brand demand",
+        "Google Trends"
       ],
       "las_vidare": [
-        "Erwin Ephron recency planning",
-        "reach vs frequency advertising"
+        "Les Binet Share of Search IPA 2020",
+        "Share of search leading indicator market share"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-047",
@@ -1019,7 +1019,7 @@
         "Lipmanowicz McCandless The Surprising Power of Liberating Structures"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-048",
@@ -1041,7 +1041,7 @@
         "discount break-even calculation"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-049",
@@ -1063,7 +1063,7 @@
         "insight vs observation advertising"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-050",
@@ -1085,7 +1085,7 @@
         "GDPR legitimate interest assessment"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-051",
@@ -1093,7 +1093,7 @@
       "omrade": "Innovation och arbetsmetoder",
       "rubrik": "Kanomodellen",
       "brodtext": "Kanomodellen utvecklades av Noriaki Kano på 1980-talet och delar in egenskaper hos en produkt eller tjänst i kategorier. Grundförväntningar märks bara när de saknas: ingen blir glad över att hotellrummet är städat, men alla blir missnöjda om det inte är det. Prestandaegenskaper ger mer nöjdhet ju bättre de är, som snabbare leverans. Förtjusningsegenskaper förväntas inte men skapar stor glädje när de finns. Över tid glider förtjusning över till grundförväntning, när kunderna vänjer sig. Modellen hjälper till att prioritera vad som ska utvecklas och vad som bara måste fungera.",
-      "exempel": "Fri frakt var en gång en positiv överraskning i e-handeln. I dag är den för många en grundförväntning, och om den saknas kan kunden lämna kassan. Det som en gång gav konkurrensfördel har blivit en hygienfaktor.",
+      "exempel": "Fri frakt var en gång en positiv överraskning i e-handeln. I dag är den för många en grundförväntning, och om den saknas kan kunden lämna kassan. Det som en gång gav konkurrensfördel är i dag något som bara måste finnas.",
       "exempel_typ": "illustrativt",
       "karnan": "Det som gläder kunden i dag förväntas i morgon.",
       "termer": [
@@ -1107,7 +1107,7 @@
         "Noriaki Kano attractive quality"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-052",
@@ -1128,7 +1128,7 @@
         "rebranding evolution vs revolution"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-053",
@@ -1136,12 +1136,12 @@
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Ankring",
       "brodtext": "Ankring innebär att den första siffran vi möter påverkar hur vi bedömer det som kommer efter, även när siffran saknar relevans. Amos Tversky och Daniel Kahneman visade på 1970-talet att deltagare som först såg ett slumpmässigt tal på ett lyckohjul gav olika uppskattningar av andelen afrikanska länder i FN, beroende på om talet var högt eller lågt. Inom prissättning och försäljning är ankring överallt: ett ursprungspris bredvid ett rabatterat, ett dyrt alternativ som får mellanalternativet att verka rimligt, eller det första budet i en förhandling.",
-      "exempel": "Ett it-konsultbolag presenterar tre alternativ i en offert och visar det mest omfattande, med högst pris, först. Mellanalternativet framstår då som balanserat, och det är också det som oftast väljs.",
+      "exempel": "Ett it-konsultbolag presenterar tre alternativ i en offert och visar det mest omfattande, med högst pris, först. Mellanalternativet framstår då som balanserat, och det är också det som ofta väljs.",
       "exempel_typ": "illustrativt",
       "karnan": "Den första siffran sätter ramen för allt som kommer efter.",
       "termer": [
         "anchoring",
-        "decoy effect",
+        "compromise effect",
         "reference price"
       ],
       "las_vidare": [
@@ -1149,7 +1149,7 @@
         "anchoring pricing"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-054",
@@ -1171,14 +1171,14 @@
         "context engineering"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-055",
       "datum": "2026-12-27",
       "omrade": "Kommunikation och presentation",
       "rubrik": "Säg inte det som står på bilden",
-      "brodtext": "Psykologen Richard Mayer har i många experiment studerat hur människor lär sig av bild, text och tal. En av hans slutsatser är redundansprincipen: vi tar ofta till oss mindre när samma ord både visas på en bild och sägs högt, än när bilden visar något annat än det som sägs. Hjärnan försöker läsa och lyssna samtidigt och belastas i onödan. Bilderna bör därför visa det som är svårt att säga, som diagram, fotografier och nyckelord, medan talaren står för resonemanget. En bild full av text konkurrerar med den som talar.",
+      "brodtext": "Psykologen Richard Mayer har i många experiment studerat hur människor lär sig av bild, text och tal. En av hans slutsatser är redundansprincipen: vi tar ofta till oss mindre när samma ord både visas på en bild och sägs högt, än när bilden visar en illustration eller ett diagram och talet står för förklaringen. Hjärnan försöker läsa och lyssna samtidigt och belastas i onödan. Bilderna bör därför visa det som är svårt att säga, som diagram, fotografier och nyckelord, medan talaren står för resonemanget. En bild full av text konkurrerar med den som talar.",
       "exempel": "En talare som läser upp sju punkter som också står på bilden tappar publiken, som läser snabbare än hen pratar. Om bilden i stället visar ett diagram med en markerad siffra lyssnar publiken på förklaringen.",
       "exempel_typ": "illustrativt",
       "karnan": "Låt bilden visa och talaren berätta.",
@@ -1192,7 +1192,7 @@
         "cognitive load presentations"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-056",
@@ -1214,7 +1214,7 @@
         "Deloitte Milliseconds Make Millions"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-057",
@@ -1236,7 +1236,7 @@
         "consent vs consensus decision making"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-058",
@@ -1258,35 +1258,36 @@
         "trust equation Charles Green"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-059",
       "datum": "2026-12-31",
       "omrade": "Kommunikation och presentation",
-      "rubrik": "Hero, hub, help",
-      "brodtext": "Hero, hub, help är en modell för innehållsstrategi som populariserades av Google och Youtube. Help-innehåll svarar på frågor som målgruppen redan söker svar på, som guider och instruktioner, och finns tillgängligt hela tiden. Hub-innehåll är återkommande och ger skäl att komma tillbaka, som en serie eller ett nyhetsbrev. Hero-innehåll är stora, sällsynta satsningar som ska nå brett och skapa uppmärksamhet. Modellen hjälper till att balansera innehållet, så att inte all energi läggs på stora kampanjer, eller tvärtom på vardagsinnehåll som ingen ser.",
-      "exempel": "En byggvaruhandel publicerar instruktionsfilmer om hur man lägger golv (help), en månatlig serie om säsongens projekt (hub) och en stor kampanj inför våren (hero). Lagren stödjer varandra: kampanjen leder till serien, som leder till guiderna.",
+      "rubrik": "Budskapshuset",
+      "brodtext": "Ett budskapshus är ett sätt att organisera det man vill säga så att det blir kort och konsekvent. Taket är huvudbudskapet, det enda mottagaren ska komma ihåg. Under taket står tre bärande argument, ofta kallade pelare, som visar varför huvudbudskapet är sant eller viktigt. Grunden består av bevis: siffror, exempel och fakta som stödjer varje pelare. Modellen tvingar fram prioritering, eftersom allt inte får plats, och ger alla som talar för organisationen samma utgångspunkt. Huset är ett internt arbetsverktyg och ingen text att läsa upp: formuleringarna anpassas efter målgrupp och kanal, men innehållet håller sig till huset. Det fungerar bra som underlag till en presentation, ett pressmeddelande eller en kampanj.",
+      "exempel": "Ett energibolag ska kommunicera en prishöjning. Taket är att priset höjs för att elnätet ska kunna byggas ut. Pelarna är att nätet behöver byggas ut, att höjningen hänger ihop med investeringarna och att kunder får hjälp att minska sin förbrukning. Varje pelare har siffror som bevis, och kundtjänst, press och webb säger samma sak.",
       "exempel_typ": "illustrativt",
-      "karnan": "Balansera innehållet mellan det som hjälper, det som återkommer och det som syns.",
+      "karnan": "Ett huvudbudskap, tre argument och bevis under varje.",
       "termer": [
-        "hero hub help",
-        "content strategy",
-        "evergreen content"
+        "message house",
+        "key message",
+        "pillars",
+        "proof points"
       ],
       "las_vidare": [
-        "YouTube hero hub help framework",
-        "content strategy pillars"
+        "message house communication",
+        "key message hierarchy"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-060",
       "datum": "2027-01-01",
       "omrade": "Regelverk och ansvar",
       "rubrik": "AI-förordningen och transparens",
-      "brodtext": "EU:s AI-förordning är världens första omfattande lagstiftning om artificiell intelligens. Den delar in AI-system efter risk: vissa användningar är förbjudna, högrisksystem får omfattande krav, och många andra system får främst krav på öppenhet. För marknadsföring och kommunikation är just transparenskraven mest relevanta. De innebär bland annat att människor ska få veta när de interagerar med en AI, till exempel en chattbot, och att vissa typer av AI-genererat material, som deepfakes, ska märkas. Transparenskraven gäller sedan 2 augusti 2026, medan kraven för högrisksystem har skjutits upp till december 2027 respektive augusti 2028.",
+      "brodtext": "EU:s AI-förordning är världens första omfattande lagstiftning om artificiell intelligens. Den delar in AI-system efter risk: vissa användningar är förbjudna, högrisksystem får omfattande krav, och många andra system får främst krav på öppenhet. För marknadsföring och kommunikation är just transparenskraven mest relevanta. De innebär bland annat att människor ska få veta när de interagerar med en AI, till exempel en chattbot, och att vissa typer av AI-genererat material, som deepfakes, ska märkas. Transparenskraven gäller i huvudsak sedan 2 augusti 2026, medan kraven för högrisksystem har skjutits upp till december 2027 respektive augusti 2028.",
       "exempel": "Ett företag som lanserar en AI-assistent i kundtjänsten behöver tydligt visa att kunden pratar med en AI. Om en kampanj innehåller en AI-skapad film där en verklig person tycks säga något hen aldrig sagt, behöver materialet märkas.",
       "exempel_typ": "illustrativt",
       "karnan": "Var öppen med var AI används. Det är både lagkrav och förtroendefråga.",
@@ -1301,7 +1302,7 @@
         "AI Act article 50"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-061",
@@ -1323,7 +1324,7 @@
         "Geoffrey Moore Crossing the Chasm"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-062",
@@ -1344,7 +1345,7 @@
         "The Effortless Experience"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-064",
@@ -1366,14 +1367,14 @@
         "price promotion long term effects"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-063",
       "datum": "2027-01-05",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Valöverflöd",
-      "brodtext": "Valöverflöd, eller choice overload, är idén att för många alternativ kan göra det svårare att välja och leda till att man inte väljer alls. Den mest kända studien gjordes av Sheena Iyengar och Mark Lepper: fler köpte sylt när ett smakbord erbjöd sex sorter än när det erbjöd tjugofyra. Senare forskning har dock visat att effekten långt ifrån alltid uppstår. En metaanalys fann att den genomsnittliga effekten var nära noll, men att den syns under vissa villkor: när alternativen är svåra att jämföra, när man saknar tydliga preferenser och när beslutet känns viktigt.",
+      "brodtext": "Valöverflöd, eller choice overload, är idén att för många alternativ kan göra det svårare att välja och leda till att man inte väljer alls. Den mest kända studien gjordes av Sheena Iyengar och Mark Lepper: fler köpte sylt när ett smakbord erbjöd sex sorter än när det erbjöd tjugofyra. Senare forskning har dock visat att effekten långt ifrån alltid uppstår. En metaanalys fann att den genomsnittliga effekten var nära noll, och senare forskning har visat att den syns under vissa villkor: när alternativen är svåra att jämföra, när man saknar tydliga preferenser och när beslutet känns viktigt.",
       "exempel": "En webbutik säljer fyrtio olika ansiktskrämer utan vägledning, och många besökare lämnar utan att köpa. När butiken i stället lyfter fram tre krämer utifrån hudtyp, med möjlighet att se hela sortimentet, ökar andelen som handlar.",
       "exempel_typ": "illustrativt",
       "karnan": "Många val förlamar när de är svåra att jämföra. Hjälp kunden att sortera.",
@@ -1387,7 +1388,7 @@
         "Scheibehenne choice overload meta-analysis"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-065",
@@ -1409,7 +1410,7 @@
         "decluttering charts"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-066",
@@ -1432,7 +1433,7 @@
         "ERRC grid"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-067",
@@ -1453,7 +1454,7 @@
         "brainwriting 6-3-5"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-068",
@@ -1475,7 +1476,7 @@
         "BATNA explained"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-069",
@@ -1497,7 +1498,7 @@
         "ICA reklamfilmer Stig"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-070",
@@ -1519,7 +1520,7 @@
         "Konsumentverket marknadsföring i sociala medier"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-074",
@@ -1541,7 +1542,7 @@
         "Evan Miller How Not To Run an A/B Test"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-072",
@@ -1562,7 +1563,7 @@
         "employer brand and consumer brand alignment"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-073",
@@ -1583,7 +1584,7 @@
         "AI personas research limitations"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-071",
@@ -1591,7 +1592,7 @@
       "omrade": "Innovation och arbetsmetoder",
       "rubrik": "Disruptiv innovation",
       "brodtext": "Disruptiv innovation används ofta om allt nytt och omvälvande, men Clayton Christensen, som beskrev begreppet i The Innovator's Dilemma 1997, menade något mer specifikt. En disruptiv innovation börjar i den nedre delen av en marknad, eller på en helt ny marknad, med en produkt som är sämre men enklare och billigare än den etablerade. De etablerade aktörerna ignorerar den, eftersom deras mest lönsamma kunder inte efterfrågar den. Med tiden blir den nya lösningen tillräckligt bra för allt fler, och när de etablerade reagerar är det ofta för sent.",
-      "exempel": "Christensens klassiska exempel är stålindustrin. Små ministålverk började med att tillverka armeringsjärn av låg kvalitet, en olönsam nisch som de stora stålverken gärna lämnade ifrån sig. Steg för steg tog ministålverken sig uppåt i kvalitet och tog till slut över stora delar av marknaden.",
+      "exempel": "Ett av Christensens klassiska exempel är stålindustrin. Små ministålverk började med att tillverka armeringsjärn av låg kvalitet, en olönsam nisch som de stora stålverken gärna lämnade ifrån sig. Steg för steg tog ministålverken sig uppåt i kvalitet och tog till slut över stora delar av marknaden.",
       "exempel_typ": "verkligt",
       "karnan": "Disruption börjar i det enkla och billiga, där de etablerade inte vill vara.",
       "termer": [
@@ -1605,7 +1606,7 @@
         "What Is Disruptive Innovation HBR 2015"
       ],
       "period": "Månad 3",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-075",
@@ -1626,7 +1627,7 @@
         "Chip och Dan Heath Made to Stick"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-076",
@@ -1648,7 +1649,7 @@
         "attention metrics advertising"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-077",
@@ -1669,7 +1670,7 @@
         "Google Project Aristotle"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-078",
@@ -1691,7 +1692,7 @@
         "LTV CAC ratio"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-079",
@@ -1712,7 +1713,7 @@
         "Oatly tone of voice"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-080",
@@ -1734,7 +1735,7 @@
         "upphovsrätt AI-genererat material"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-081",
@@ -1756,7 +1757,7 @@
         "Stanford d.school design thinking process"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-082",
@@ -1777,7 +1778,7 @@
         "co-branding strategy"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-083",
@@ -1799,7 +1800,7 @@
         "Richard Thaler Misbehaving"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-084",
@@ -1820,7 +1821,7 @@
         "Mata v Avianca ChatGPT"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-086",
@@ -1828,7 +1829,7 @@
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "När misstaget blir en möjlighet",
       "brodtext": "Service recovery-paradoxen är idén att en kund som råkat ut för ett problem som sedan löses mycket bra kan bli mer nöjd än om problemet aldrig hade uppstått. Forskningen ger stöd för att en god hantering kan höja nöjdheten, men en metaanalys från 2007 fann ingen motsvarande effekt på lojalitet och återköp. Lärdomen är att hanteringen av ett misstag betyder mycket för hur kunden minns det. Snabb respons, ett ärligt erkännande och en lösning som går längre än kunden väntat kan rädda en relation som annars hade gått förlorad.",
-      "exempel": "En kund får fel soffa levererad. Företaget ringer samma dag, ber om ursäkt, byter soffan inom två dagar och står för frakten. Kunden berättar om händelsen för vänner, men som ett exempel på bra service snarare än på ett misstag.",
+      "exempel": "En kund får fel soffa levererad. Företaget ringer samma dag, ber om ursäkt, byter soffan inom två dagar och står för frakten. Kunden minns händelsen som ett exempel på bra service snarare än som ett misstag.",
       "exempel_typ": "illustrativt",
       "karnan": "Misstag går inte att undvika helt, men hanteringen avgör vad kunden minns.",
       "termer": [
@@ -1841,7 +1842,7 @@
         "de Matos Henrique Rossi 2007 service recovery"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-085",
@@ -1862,7 +1863,7 @@
         "Geoffrey Moore core vs context"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-087",
@@ -1885,7 +1886,7 @@
         "Ansoff matrix explained"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-184",
@@ -1906,7 +1907,7 @@
         "Kahneman Lovallo reference class forecasting"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-089",
@@ -1927,7 +1928,7 @@
         "rule of three persuasion"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-090",
@@ -1949,7 +1950,7 @@
         "Ehrenberg-Bass physical availability"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-091",
@@ -1971,7 +1972,7 @@
         "start stop continue retrospective"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-092",
@@ -1993,7 +1994,7 @@
         "consultative selling questions"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-093",
@@ -2016,7 +2017,7 @@
         "paid earned shared owned"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-094",
@@ -2038,7 +2039,7 @@
         "IMY kakor och samtycke"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-095",
@@ -2061,7 +2062,7 @@
         "Supercell culture killing games"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-096",
@@ -2083,7 +2084,7 @@
         "Anthropic define success criteria and evaluations"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-098",
@@ -2105,7 +2106,7 @@
         "Nielsen Norman Group personas"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-097",
@@ -2127,7 +2128,7 @@
         "Spotify Wrapped marketing case"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-099",
@@ -2149,7 +2150,7 @@
         "learn wardley mapping"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-100",
@@ -2171,7 +2172,7 @@
         "marketing KPI tree"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-101",
@@ -2192,7 +2193,7 @@
         "primacy and recency in presentations"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-102",
@@ -2214,7 +2215,7 @@
         "Google Ventures design sprint"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-103",
@@ -2236,7 +2237,7 @@
         "cost to serve analysis"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-104",
@@ -2257,7 +2258,7 @@
         "IPA creativity and effectiveness"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-105",
@@ -2278,7 +2279,7 @@
         "Konsumentverket jämförande reklam"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-106",
@@ -2299,7 +2300,7 @@
         "Zappos MVP shoes story"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-107",
@@ -2321,29 +2322,27 @@
         "Google search quality rater guidelines needs met"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-108",
       "datum": "2027-02-18",
       "omrade": "Kundinsikt och kundupplevelse",
       "rubrik": "Positiv friktion",
-      "brodtext": "Det mesta arbetet med kundupplevelse handlar om att ta bort friktion. Men ibland gör ett medvetet hinder upplevelsen bättre. Positiv friktion kan skydda kunden från misstag, som en extra bekräftelse innan en stor betalning. Den kan skapa trygghet, som att visa vad som händer innan ett avtal tecknas. Den kan också öka värdet, eftersom människor ofta värderar det de själva varit med och skapat högre, en effekt som kallas IKEA-effekten. Det som avgör är om varje steg tjänar kunden eller bara organisationen.",
+      "brodtext": "Det mesta arbetet med kundupplevelse handlar om att ta bort friktion. Men ibland gör ett medvetet hinder upplevelsen bättre. Positiv friktion kan skydda kunden från misstag, som en extra bekräftelse innan en stor betalning. Den kan skapa trygghet, som att visa vad som händer innan ett avtal tecknas. Den kan också öka värdet, eftersom människor ofta värderar det de själva varit med och skapat högre. Det som avgör är om varje steg tjänar kunden eller bara organisationen.",
       "exempel": "En bank lägger till ett steg där kunden får bekräfta mottagarens namn innan en större betalning genomförs. Det tar några sekunder längre men minskar felbetalningar och bedrägerier. Kunderna upplever steget som en trygghet, inte som ett hinder.",
       "exempel_typ": "illustrativt",
       "karnan": "Ta bort friktion som stör och behåll den som skyddar.",
       "termer": [
         "positive friction",
-        "IKEA effect",
         "error prevention",
         "trust"
       ],
       "las_vidare": [
-        "positive friction UX",
-        "Norton Mochon Ariely IKEA effect"
+        "positive friction UX"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-109",
@@ -2365,7 +2364,7 @@
         "Shell scenarios history"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-110",
@@ -2386,7 +2385,7 @@
         "Marilyn Strathern Improving ratings"
       ],
       "period": "Månad 4",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-111",
@@ -2407,14 +2406,14 @@
         "storyline before slides"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-112",
       "datum": "2027-02-22",
       "omrade": "Varumärke och tillväxt",
       "rubrik": "Sophisticated mass marketing",
-      "brodtext": "Sophisticated mass marketing förenar två skolor som ofta ställs mot varandra. Begreppet kommer från marknadsföringsprofessorn Mark Ritson. Ehrenberg-Bass betonar bred räckvidd och att nå alla potentiella köpare. Den klassiska skolan betonar segmentering och målgruppsval. Ritsons poäng är att båda behövs, på olika nivåer: segmentering och positionering hjälper till att förstå marknaden och skärpa strategin, men varumärkesbyggande kommunikation bör ofta nå brett. Samtidigt kan aktivering riktas smalare mot dem som står närmast ett köp.",
+      "brodtext": "Sophisticated mass marketing förenar två skolor som ofta ställs mot varandra. Begreppet kommer från Ehrenberg-Bass Institute, som betonar bred räckvidd och att nå alla potentiella köpare. Den klassiska skolan betonar segmentering och målgruppsval. Marknadsföringsprofessorn Mark Ritson har hävdat att båda behövs, på olika nivåer: segmentering och positionering hjälper till att förstå marknaden och skärpa strategin, men varumärkesbyggande kommunikation bör ofta nå brett. Samtidigt kan aktivering riktas smalare mot dem som står närmast ett köp.",
       "exempel": "Ett bilmärke segmenterar marknaden noggrant och väljer att positionera sig på säkerhet för barnfamiljer. Varumärkeskampanjen visas ändå brett, eftersom även andra påverkar bilden av märket, medan erbjudanden om provkörning riktas till dem som nyligen besökt webbplatsen.",
       "exempel_typ": "illustrativt",
       "karnan": "Segmentera för att förstå marknaden, men bygg varumärket brett.",
@@ -2429,7 +2428,7 @@
         "Ritson Sharp targeting debate"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-113",
@@ -2450,7 +2449,7 @@
         "root cause analysis 5 whys"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-114",
@@ -2472,7 +2471,7 @@
         "LOU offentlig upphandling grunder"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-115",
@@ -2494,7 +2493,7 @@
         "breaking category conventions"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-116",
@@ -2502,7 +2501,7 @@
       "omrade": "Regelverk och ansvar",
       "rubrik": "Marknadsföring till barn",
       "brodtext": "Marknadsföring som riktar sig till barn omfattas av särskilt höga krav, eftersom barn har svårare att förstå avsikten med reklam. Enligt marknadsföringslagen och Internationella handelskammarens regler ska barns ålder och omdöme beaktas, och det är inte tillåtet att direkt uppmana barn att köpa eller att övertala sina föräldrar att köpa åt dem. I Sverige är det dessutom förbjudet att rikta reklam till barn under tolv år i tv-sändningar som omfattas av svensk radio- och tv-lag. I sociala medier och spel gäller samma grundprinciper, och gränsen mellan innehåll och reklam granskas extra noga.",
-      "exempel": "Ett leksaksföretag samarbetar med en populär barnkanal på Youtube. Om produkterna visas som en del av underhållningen utan tydlig märkning, och barnen uppmanas att be sina föräldrar om dem, bryter marknadsföringen mot flera regler samtidigt.",
+      "exempel": "Ett leksaksföretag samarbetar med en populär barnkanal på YouTube. Om produkterna visas som en del av underhållningen utan tydlig märkning, och barnen uppmanas att be sina föräldrar om dem, bryter marknadsföringen mot flera regler samtidigt.",
       "exempel_typ": "illustrativt",
       "karnan": "Ju yngre mottagaren är, desto högre krav på tydlighet och omdöme.",
       "termer": [
@@ -2515,7 +2514,7 @@
         "ICC Advertising and Marketing Communications Code children"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-117",
@@ -2537,7 +2536,7 @@
         "Strategyzer Business Model Canvas"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-118",
@@ -2559,7 +2558,7 @@
         "brand equity measurement"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-119",
@@ -2581,7 +2580,7 @@
         "present bias explained"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-120",
@@ -2603,7 +2602,7 @@
         "context window explained"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-122",
@@ -2625,7 +2624,7 @@
         "customer journey mapping research"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-121",
@@ -2647,7 +2646,7 @@
         "design system governance"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-123",
@@ -2668,7 +2667,7 @@
         "SWOT analysis criticism"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-124",
@@ -2690,7 +2689,7 @@
         "retention curves subscription"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-125",
@@ -2711,7 +2710,7 @@
         "anxiety reappraisal public speaking"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-183",
@@ -2733,7 +2732,7 @@
         "Mark Ritson differentiation debate"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-127",
@@ -2755,7 +2754,7 @@
         "affinity diagramming user research"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-128",
@@ -2776,7 +2775,7 @@
         "change request process"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-129",
@@ -2798,14 +2797,14 @@
         "audio distinctive brand assets"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-130",
       "datum": "2027-03-12",
       "omrade": "Regelverk och ansvar",
       "rubrik": "Prissänkningar och 30-dagarsregeln",
-      "brodtext": "Sedan hösten 2022 gäller i Sverige regler om hur prissänkningar får presenteras, som en följd av EU:s så kallade omnibusdirektiv. När ett företag anger att ett pris har sänkts ska det också visa det lägsta pris som tillämpats under de senaste 30 dagarna före sänkningen, och rabatter i procent eller kronor ska räknas från just det priset. Syftet är att förhindra att priser höjs strax före en rea för att rabatten ska se större ut. Reglerna finns i prisinformationslagen, och regeringen har föreslagit justeringar, bland annat för stegvisa prissänkningar. Prishistoriken behöver därför följas noga i all kampanjplanering.",
+      "brodtext": "Sedan hösten 2022 gäller i Sverige regler om hur prissänkningar får presenteras, som en följd av EU:s så kallade omnibusdirektiv. När ett företag anger att ett pris har sänkts ska det också visa det lägsta pris som tillämpats under de senaste 30 dagarna före sänkningen, och rabatter i procent eller kronor ska räknas från just det priset. Syftet är att förhindra att priser höjs strax före en rea för att rabatten ska se större ut. Reglerna finns i prisinformationslagen. Vid stegvisa prissänkningar ska priset före den första sänkningen anges. Prishistoriken behöver därför följas noga i all kampanjplanering.",
       "exempel": "En webbutik höjer priset på en jacka från 1 200 till 1 500 kronor två veckor före Black Week och skriver sedan ”nu 1 000 kronor, tidigare 1 500”. Enligt reglerna ska 1 200 kronor anges som jämförelsepris, och rabatten blir betydligt mindre imponerande.",
       "exempel_typ": "illustrativt",
       "karnan": "Ett sänkt pris ska jämföras med det lägsta priset de senaste 30 dagarna.",
@@ -2820,7 +2819,7 @@
         "prisinformationslagen prissänkning"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-131",
@@ -2841,7 +2840,7 @@
         "opportunity solution tree"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-132",
@@ -2862,7 +2861,7 @@
         "brand promise delivery"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-133",
@@ -2884,7 +2883,7 @@
         "endowment effect marketing"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-134",
@@ -2905,7 +2904,7 @@
         "distinctiveness generative AI marketing"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-136",
@@ -2927,7 +2926,7 @@
         "aha moment activation metric"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-135",
@@ -2949,7 +2948,7 @@
         "CDP use cases"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-137",
@@ -2971,7 +2970,7 @@
         "Porter five forces explained"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-138",
@@ -2993,7 +2992,7 @@
         "effect size explained"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-139",
@@ -3015,7 +3014,7 @@
         "messy middle purchase behavior"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-141",
@@ -3037,7 +3036,7 @@
         "Kahneman cognitive ease"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-140",
@@ -3059,7 +3058,7 @@
         "category creation strategy"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-142",
@@ -3081,7 +3080,7 @@
         "AI augmentation vs automation"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-144",
@@ -3103,7 +3102,7 @@
         "voice of the customer program"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-143",
@@ -3125,7 +3124,7 @@
         "Nielsen Norman Group site search"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-145",
@@ -3147,7 +3146,7 @@
         "Andy Grove High Output Management"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-146",
@@ -3169,7 +3168,7 @@
         "Ehrenberg-Bass brand health tracking"
       ],
       "period": "Månad 5",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-147",
@@ -3191,7 +3190,7 @@
         "Bezos memo PowerPoint 2004"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-148",
@@ -3213,28 +3212,29 @@
         "marketing mix model saturation curve"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-149",
       "datum": "2027-03-31",
       "omrade": "Innovation och arbetsmetoder",
-      "rubrik": "Lean Coffee",
-      "brodtext": "Lean Coffee är ett mötesformat utan förberedd agenda, som Jim Benson och Jeremy Lightsmith tog fram i Seattle 2009. Deltagarna skriver ner ämnen de vill diskutera, presenterar dem kort och röstar om ordningen. Varje ämne diskuteras under en bestämd tid, ofta fem till åtta minuter, och därefter avgör gruppen om man ska fortsätta eller gå vidare. Formatet passar för kunskapsdelning, retrospektiver och nätverksträffar, där det viktigaste är att rätt frågor tas upp. Det ger deltagarna ägarskap över mötet och minskar risken att tiden går åt till det som bara en person tycker är viktigt.",
-      "exempel": "Ett teknikbolag ersätter sitt månatliga informationsmöte med Lean Coffee. Medarbetarna föreslår ämnen som nya AI-verktyg och svåra kundsituationer, och de mest efterfrågade tas upp först. Fler deltar aktivt, och mötet upplevs som mer användbart.",
+      "rubrik": "Kotters åtta steg",
+      "brodtext": "Harvardprofessorn John Kotter beskrev i artikeln Leading Change (1995) och boken med samma namn (1996) åtta steg för att genomföra större förändringar. Skapa en känsla av angelägenhet. Bilda en styrande koalition. Ta fram vision och strategi. Kommunicera visionen. Undanröj hinder så att fler kan agera. Skapa tidiga och synliga framgångar. Bygg vidare på dem. Förankra förändringen i kulturen. Utgångspunkten är att förändringar oftast misslyckas av mänskliga skäl, som att ingen känner att det brådskar eller att visionen aldrig når fram, snarare än av dålig analys. Modellen kritiseras för att vara linjär och uppifrån-och-ned, och i praktiken överlappar stegen. Den är mest användbar som checklista för vad som saknas i en förändring som har fastnat.",
+      "exempel": "En kommun inför ett nytt digitalt ärendesystem, men medarbetarna fortsätter arbeta som förut. När ledningen går igenom stegen ser den vad som saknades: ingen hade förklarat varför förändringen behövdes, och det fanns inga tidiga framgångar att visa. De börjar om med en tydlig berättelse och en avdelning som får visa vägen.",
       "exempel_typ": "illustrativt",
-      "karnan": "Låt deltagarna bestämma agendan, så diskuteras det som spelar roll.",
+      "karnan": "Förändring misslyckas oftast av mänskliga skäl, så planera för dem.",
       "termer": [
-        "Lean Coffee",
-        "participant-driven agenda",
-        "timeboxing"
+        "Kotter's 8-step model",
+        "change management",
+        "guiding coalition",
+        "short-term wins"
       ],
       "las_vidare": [
-        "Lean Coffee format",
-        "Jim Benson Lean Coffee"
+        "John Kotter Leading Change",
+        "Kotter 8 steps change model"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-150",
@@ -3255,29 +3255,29 @@
         "if you then we negotiation technique"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-151",
       "datum": "2027-04-02",
       "omrade": "Kommunikation och presentation",
-      "rubrik": "Reklam för höger hjärnhalva",
-      "brodtext": "Mycket av dagens reklam talar till fel sida av hjärnan, menar Orlando Wood vid analysföretaget System1 i böckerna Lemon och Look out. Med stöd i Iain McGilchrists forskning om hur hjärnhalvorna uppmärksammar världen på olika sätt menar han att reklam med levande karaktärer, dialog, humor, en känsla av plats och en berättelse som utvecklas över tid fångar bredare och mer varaktig uppmärksamhet. Reklam som bygger på abstrakta budskap, rytmisk klippning och ord på skärmen tenderar att ge svagare effekt. Teorin är omdiskuterad, men System1:s data visar tydliga mönster.",
-      "exempel": "Ett bredbandsbolag byter en film full av text och snabba klipp mot en kort scen där två grannar pratar om hur uppkopplingen fungerar en fredagskväll. Filmen ger betydligt starkare känslomässig respons i tester, och karaktärerna återkommer i flera kampanjer.",
+      "rubrik": "Klarspråk",
+      "brodtext": "Klarspråk är att skriva så att mottagaren förstår, hittar det viktigaste och vet vad hen ska göra. För myndigheter, kommuner och annan offentlig verksamhet är det ett lagkrav: enligt språklagen (2009:600) ska språket i offentlig verksamhet vara vårdat, enkelt och begripligt. Språkrådet beskriver klarspråk som språk som är tydligt och anpassat efter de avsedda mottagarna. Det handlar om mer än korta meningar: att börja med det viktigaste, välja ord som mottagaren känner igen, förklara fackord och ha en tydlig layout. För den som kommunicerar åt offentlig sektor är klarspråk en del av uppdraget, och i andra sammanhang ofta ett enkelt sätt att undvika missförstånd.",
+      "exempel": "En kommun skickar beslut om bygglov med långa meningar och juridiska termer och får många samtal från förvirrade sökande. När breven skrivs om med beslutet först, nästa steg under en egen rubrik och förklaringar av svåra ord minskar antalet följdfrågor.",
       "exempel_typ": "illustrativt",
-      "karnan": "Människor, relationer och berättelser fångar uppmärksamhet. Abstrakta budskap gör det sällan.",
+      "karnan": "Skriv så att mottagaren förstår och vet vad hen ska göra.",
       "termer": [
-        "right-brain advertising",
-        "attention",
-        "System1",
-        "characters"
+        "klarspråk",
+        "språklagen",
+        "Språkrådet",
+        "plain language"
       ],
       "las_vidare": [
-        "Orlando Wood Lemon",
-        "Orlando Wood Look Out IPA"
+        "Språkrådet klarspråk",
+        "Språklag (2009:600)"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-152",
@@ -3299,7 +3299,7 @@
         "marknadsföringslagen 19 § samtycke"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-153",
@@ -3320,7 +3320,7 @@
         "sunk cost fallacy business"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-154",
@@ -3342,7 +3342,7 @@
         "brand extension fit"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-155",
@@ -3364,29 +3364,29 @@
         "Cialdini scarcity principle"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-156",
       "datum": "2027-04-07",
       "omrade": "Digitalt, data och AI",
-      "rubrik": "Multimodal AI",
-      "brodtext": "Tidiga språkmodeller hanterade bara text. Dagens modeller är ofta multimodala, vilket betyder att de kan tolka, och i vissa fall skapa, bilder, ljud, video och dokument. De kan läsa ett diagram i en rapport, beskriva en skärmbild, analysera en skiss eller transkribera ett möte. Det öppnar nya arbetssätt: att låta AI granska en webbplats utifrån skärmbilder, sammanfatta en workshop från fotograferade lappar eller jämföra konkurrenters annonser. Samma försiktighet gäller som för text: tolkningarna kan vara fel, och känsligt material ska hanteras enligt organisationens riktlinjer.",
-      "exempel": "Efter en workshop fotograferar strategen väggarna fulla av lappar och ber en AI-modell sortera dem i teman. Efter några minuter finns ett första utkast till sammanfattning, som strategen sedan granskar och justerar mot det som sades i rummet.",
-      "exempel_typ": "illustrativt",
-      "karnan": "AI kan numera läsa bilder, ljud och dokument, och det öppnar nya arbetssätt.",
+      "rubrik": "Bias i AI-system",
+      "brodtext": "AI-modeller lär sig av data, och data speglar världen som den har sett ut. Om historiska beslut, texter eller bilder innehåller snedfördelningar lär sig modellen dem och kan förstärka dem utan att någon har bett den om det. Det kallas bias, eller snedvridning. För marknadsföring och kommunikation kan samma mekanism ge stereotypa bilder, skeva målgruppsval och texter som utesluter vissa grupper. Att modellen är teknisk gör den inte neutral. Motmedlet är att testa resultat på olika grupper och situationer, att ha människor som granskar och att vara försiktig när AI används för beslut som rör människor, som rekrytering eller kreditbedömning.",
+      "exempel": "Amazon utvecklade ett experimentellt verktyg som gav sökande betyg från en till fem stjärnor. Enligt Reuters 2018 hade modellen tränats på tio års ansökningar, där de flesta kom från män, och den nedvärderade bland annat CV:n som innehöll ordet ”women's”. Teamet justerade verktyget men kunde inte garantera att det inte hittade andra sätt att sortera på, och projektet lades ner. Amazon har uppgett att rekryterare aldrig använde det för att bedöma sökande.",
+      "exempel_typ": "verkligt",
+      "karnan": "AI ärver snedheterna i sin data, så anta aldrig att den är neutral.",
       "termer": [
-        "multimodal AI",
-        "vision",
-        "speech-to-text",
-        "image generation"
+        "algorithmic bias",
+        "training data",
+        "fairness",
+        "stereotypes"
       ],
       "las_vidare": [
-        "multimodal AI explained",
-        "multimodal models marketing use cases"
+        "Reuters Amazon scraps secret AI recruiting tool",
+        "Buolamwini Gebru Gender Shades"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-158",
@@ -3408,7 +3408,7 @@
         "channel switching friction"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-157",
@@ -3430,7 +3430,7 @@
         "tree testing information architecture"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-185",
@@ -3451,7 +3451,7 @@
         "resource-based view strategy"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-160",
@@ -3473,7 +3473,7 @@
         "Simpson's paradox marketing"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-161",
@@ -3494,7 +3494,7 @@
         "Chip och Dan Heath Made to Stick"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-162",
@@ -3516,29 +3516,29 @@
         "LinkedIn B2B Institute 95-5"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-163",
       "datum": "2027-04-14",
       "omrade": "Innovation och arbetsmetoder",
-      "rubrik": "Prickröstningens fällor",
-      "brodtext": "Prickröstning, där deltagarna sätter klistermärken på de alternativ de föredrar, är ett snabbt sätt att se vad en grupp tycker. Men metoden har kända svagheter. Om rösterna sätts öppet och i tur och ordning påverkas de som röstar senare av prickarna som redan finns, och chefens val får ofta extra tyngd. Alternativ som hamnar först eller syns tydligast får också fler röster. Resultatet ser objektivt ut men kan spegla grupptryck. Det går att motverka genom att alla väljer i tysthet först och sedan sätter sina prickar samtidigt, eller genom att rösta digitalt och anonymt.",
-      "exempel": "I en workshop märker facilitatorn att nästan alla röster hamnar på de två idéer som chefen pekat ut. Nästa gång skriver deltagarna ner sina val på en lapp innan någon får gå fram till väggen. Fördelningen blir betydligt jämnare och två oväntade idéer får stöd.",
+      "rubrik": "Double Diamond",
+      "brodtext": "Double Diamond är en modell för designprocesser som brittiska Design Council populariserade 2005. Den består av två diamanter som vardera först vidgas och sedan smalnar av. Den första handlar om att hitta rätt problem: i Discover utforskar man brett vad som faktiskt pågår, och i Define väljer man vilken fråga som ska lösas. Den andra handlar om att hitta rätt lösning: i Develop tas många alternativ fram och prövas, och i Deliver väljer man och genomför. Modellen bygger på samma växling mellan öppna och slutna lägen som begreppet divergens och konvergens. Dess främsta värde är att den skiljer mellan att förstå problemet och att lösa det, eftersom team ofta hoppar direkt till lösningar. I verkligheten är processen rörigare än diagrammet, och man går ofta tillbaka.",
+      "exempel": "Ett universitet vill minska antalet studenter som hoppar av under första terminen. I Discover intervjuar teamet studenter och personal, och i Define visar det sig att många hoppar av för att de saknar kontakt med andra på kursen, inte för att kurserna är svåra. I Develop prövas olika sätt att skapa kontakt, och i Deliver införs det som fungerade bäst.",
       "exempel_typ": "illustrativt",
-      "karnan": "Låt alla välja i tysthet innan någon röstar öppet.",
+      "karnan": "Hitta först rätt problem, sedan rätt lösning.",
       "termer": [
-        "dot voting",
-        "anchoring",
-        "groupthink",
-        "anonymous voting"
+        "Double Diamond",
+        "Discover Define Develop Deliver",
+        "Design Council",
+        "problem framing"
       ],
       "las_vidare": [
-        "dot voting bias facilitation",
-        "silent voting workshop"
+        "Design Council The Double Diamond",
+        "history of the Double Diamond"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-164",
@@ -3560,7 +3560,7 @@
         "stakeholder mapping account management"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-165",
@@ -3582,7 +3582,7 @@
         "crisis communication best practice"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-166",
@@ -3604,7 +3604,7 @@
         "lagen om namn och bild i reklam"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-167",
@@ -3626,7 +3626,7 @@
         "Slack Glitch origin story"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-168",
@@ -3648,7 +3648,7 @@
         "brand personality framework"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-169",
@@ -3670,7 +3670,7 @@
         "Strohmetz 2002 mints tipping study"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-170",
@@ -3692,7 +3692,7 @@
         "shadow AI risks"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-172",
@@ -3714,7 +3714,7 @@
         "This Is Service Design Doing prototyping"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-186",
@@ -3736,7 +3736,7 @@
         "Google structured data guidelines"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-173",
@@ -3757,14 +3757,14 @@
         "Amazon flywheel"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-174",
       "datum": "2027-04-25",
       "omrade": "Digitalt, data och AI",
       "rubrik": "Börja i frågan, inte i datan",
-      "brodtext": "Många organisationer har mer data och fler dashboards än någonsin, men får ändå få svar. Ofta beror det på att mätningen har börjat i vad som går att mäta i stället för i vad man behöver veta. En mätplan vänder på ordningen. Den börjar i affärsmålen och de beslut som ska fattas, formulerar vilka frågor datan ska besvara och väljer först därefter mått, källor och verktyg. På så sätt blir det tydligt vilka siffror som spelar roll och vilka som kan tas bort. En dashboard som ingen fattar beslut utifrån är bara dekoration.",
+      "brodtext": "Många organisationer har mer data och fler dashboards än någonsin, men får ändå för få svar. Ofta beror det på att mätningen har börjat i vad som går att mäta i stället för i vad man behöver veta. En mätplan vänder på ordningen. Den börjar i affärsmålen och de beslut som ska fattas, formulerar vilka frågor datan ska besvara och väljer först därefter mått, källor och verktyg. På så sätt blir det tydligt vilka siffror som spelar roll och vilka som kan tas bort. En dashboard som ingen fattar beslut utifrån är bara dekoration.",
       "exempel": "En marknadsavdelning skickar varje månad ut en rapport med fyrtio mått som få läser. När teamet i stället utgår från tre beslut som ska fattas under året, som budgetfördelningen mellan kanaler, krymper rapporten till åtta mått, och den används på varje ledningsmöte.",
       "exempel_typ": "illustrativt",
       "karnan": "Börja i besluten som ska fattas och välj sedan vad som ska mätas.",
@@ -3779,7 +3779,7 @@
         "decision-driven analytics"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-175",
@@ -3800,7 +3800,7 @@
         "anticipating tough questions presentation"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-176",
@@ -3821,29 +3821,29 @@
         "Min Basadur how might we"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-177",
       "datum": "2027-04-28",
       "omrade": "Strategi och affär",
-      "rubrik": "Resultat och kassaflöde",
-      "brodtext": "Ett företag kan gå med vinst och ändå få slut på pengar. Resultatet visar om intäkterna överstiger kostnaderna under en period, medan kassaflödet visar hur pengarna rör sig in och ut. Skillnaden uppstår bland annat när kunder betalar sent, när lager byggs upp eller när investeringar görs. För en konsult eller strateg är det viktigt att förstå båda, eftersom de påverkar kundens beslut på olika sätt. Ett förslag som ger bra resultat på sikt kan vara svårt att genomföra om det binder kapital, och en snabb förbättring av kassaflödet kan vara värd mer än den ser ut.",
-      "exempel": "En kund tvekar inför ett lönsamt förslag om ett nytt lojalitetsprogram. Samtalet visar att problemet inte är kalkylen utan kassaflödet: investeringen ska betalas i förskott, medan intäkterna kommer under flera år. När betalningen delas upp över projektets gång blir beslutet möjligt.",
+      "rubrik": "Win/loss-analys",
+      "brodtext": "En win/loss-analys är en strukturerad uppföljning av varför ni vann eller förlorade ett uppdrag. Den bygger främst på intervjuer med kunden, helst några veckor efter beslutet och gärna av någon som inte var med i affären, eftersom kunder ofta är ärligare mot en neutral part. Säljteamets bild av utfallet stämmer inte alltid med kundens. Pris nämns ofta som skäl, men bakom ligger i många fall förtroende, förståelse för uppdraget eller en offert som inte svarade på kundens problem. Analysen blir mest värdefull när den omfattar både vinster och förluster och letar efter mönster över flera affärer. Resultaten används för att förbättra erbjudandet, offerterna och valet av vilka uppdrag man går efter.",
+      "exempel": "En byrå förlorar tre upphandlingar i rad och förklarar det med priset. När den ringer kunderna efter besluten säger två av tre att priset inte var avgörande, utan att offerten inte visade att byrån förstått deras problem. Byrån ändrar offertmallen så att den börjar i kundens situation.",
       "exempel_typ": "illustrativt",
-      "karnan": "Vinst och pengar på kontot är inte samma sak. Förstå båda hos kunden.",
+      "karnan": "Fråga kunderna varför de valde som de gjorde, i stället för att gissa.",
       "termer": [
-        "cash flow",
-        "profit and loss",
-        "working capital",
-        "payment terms"
+        "win/loss analysis",
+        "customer interviews",
+        "sales feedback",
+        "pattern analysis"
       ],
       "las_vidare": [
-        "profit vs cash flow explained",
-        "working capital basics"
+        "win loss analysis interviews",
+        "win loss analysis professional services"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-178",
@@ -3865,7 +3865,7 @@
         "Robert McKee Storynomics"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-179",
@@ -3887,7 +3887,7 @@
         "DSA targeted advertising minors"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-180",
@@ -3909,7 +3909,7 @@
         "Procter & Gamble Connect + Develop"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-181",
@@ -3931,7 +3931,7 @@
         "trademark distinctiveness spectrum"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2026-q4-182",
@@ -3953,7 +3953,7 @@
         "confirmation bias research"
       ],
       "period": "Månad 6",
-      "granskad": "2026-10-17"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2027-q2-002",
@@ -3975,7 +3975,7 @@
         "timeboxing"
       ],
       "period": "Månad 7",
-      "granskad": "2026-11-05"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2027-q2-001",
@@ -3997,7 +3997,7 @@
         "IKEA effect co-creation"
       ],
       "period": "Månad 7",
-      "granskad": "2026-11-05"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2027-q2-003",
@@ -4019,7 +4019,7 @@
         "switching costs customer retention"
       ],
       "period": "Månad 7",
-      "granskad": "2026-11-09"
+      "granskad": "2026-11-14"
     },
     {
       "id": "2027-q2-004",
@@ -4041,7 +4041,7 @@
         "EU sweep dark patterns 2022"
       ],
       "period": "Månad 7",
-      "granskad": "2026-11-09"
+      "granskad": "2026-11-14"
     }
   ]
 }
