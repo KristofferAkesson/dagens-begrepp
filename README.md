@@ -63,6 +63,8 @@ Begrepp med datum i framtiden får bytas ut eller tas bort fritt, eftersom ingen
 4. Valideringen körs automatiskt. Är den grön kan ändringen gå in i `main`, och då når innehållet apparna inom några minuter.
 5. Slack följer med automatiskt: kanalen får varje dags begrepp från samma fil.
 
+Ändra alltid innehållet här först. Appen har en kopia av filen som reserv, men den läser alltid den här filen på `main`. En ändring som bara görs i appens kopia når ingen förrän nästa version av appen. När filen har publicerats här kopieras den till appen.
+
 Rätta en text på samma sätt: ändra texten, uppdatera `innehallsversion` och spara.
 
 ## Köra skripten själv
